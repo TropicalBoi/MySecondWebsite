@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logoScale} className="Logo-scale" alt="logo" />
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <img src={logoScale} className="Logo-scale" alt="logo" /> */}
       </header>
     </div>
   );
