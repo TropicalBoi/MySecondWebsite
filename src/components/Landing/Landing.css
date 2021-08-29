@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import '~video-react/dist/video-react.css';
+;
 
 .Tew-logo {
     height: 100vmin;
@@ -43,6 +45,14 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+.Video {
+    position: absolute;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -9999;
+    object-fit: fill;
 }
 
 @keyframes App-logo-scale {

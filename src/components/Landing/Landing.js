@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import logoScale from './logoScale.svg';
+import video from './WebtewLanding10mbNoSound.mp4';
 import './Landing.css';
+import { Player } from 'video-react';
 
 class Landing extends React.Component {
 
@@ -12,6 +14,14 @@ class Landing extends React.Component {
                 <div className="Logo">
                     <img src={logoScale} className="Logo-scale" alt="logo" />
                     <img src={logo} className="Tew-logo" alt="logo" />
+                    <Player className="Video"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            fluid={false}
+                            src={video}
+                            type="video/mp4" 
+                    />
                 </div>
             </div>
         )
