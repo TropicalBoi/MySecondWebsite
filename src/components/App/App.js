@@ -10,9 +10,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p className="About">ABOUT</p>
-        <img src={logoScale} className="Logo-scale" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="Logo">
+          <img src={logoScale} className="Logo-scale" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
       </header>
+      <div className="Marquee">
+          <p> 
+              TEWPARI BUALOI - TROPICALBOI - 
+              TEWPARI BUALOI - TROPICALBOI -
+              TEWPARI BUALOI - TROPICALBOI -
+          </p>
+      </div>
       <div className="App-body">
         <img src={zing} className="Zing" alt="zing" />
         <img src={asyou} className="AsYou" alt="as-you-grow-older-but-never-wiser" />
