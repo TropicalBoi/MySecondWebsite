@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.Marquee {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    display: flex;
+    align-items: flex-end;
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    z-index: 2;
+}
+  
+.Marquee p{
+    margin: 0;
+    color:#C4C4C4 ;
+    background-color: black;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 1s linear infinite;
+    -webkit-animation: scroll-left 1s linear infinite;
+    animation: scroll-left 10s linear infinite;
+}
+  
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(0%);
+    }
+    100% {
+        -moz-transform: translateX(-50%);
+    }
+}
+  
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+    }
+}
+  
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
