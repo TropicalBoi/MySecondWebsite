@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.Header {
+.Header1 {
     position: absolute;
     width: 370px;
     height: 205px;
@@ -30,7 +30,7 @@
     color: #47E473;
 }
 
-.Text {
+.Text1 {
     position: absolute;
     width: 370px;
     height: 110px;
@@ -92,7 +92,7 @@
     bottom: 0;
 }
 
-.myarrow{
+.myarrow1 {
     position: absolute;
     left: 1400px;
     bottom: 120px;
@@ -103,7 +103,7 @@
     height: auto;
 }
 
-.line {
+.line1 {
     border-top: 0.1rem solid #47E473;
     border-bottom: 0.1rem solid #47E473;
     display: inline-block;
@@ -112,7 +112,7 @@
     transition: width 1s ease-out
 }
 
-.line::before {
+.line1::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -121,25 +121,25 @@
 }
 
 @media (prefers-reduced-motion: no-preference){
-    .line:hover {
+    .line1:hover {
         width: 300px;
     }
 }
 
 
-.triangle{
+.triangle1{
     display: flex;
     flex-direction: column;
 }
 
-.right{
+.right1{
     transform: rotate(45deg);
     transform-origin: top right;
     border-right: 0.15rem solid #47E473;
     height: 1rem;
 }
 
-.left{
+.left1{
     transform: rotate(-45deg);
     transform-origin: bottom right;
     border-left: 0.15rem solid #47E473;

@@ -14,18 +14,18 @@ class Zing extends React.Component {
                 <img src={zingGif} className="ZingGif" alt="screen sever" />
                 <img src={fishTank} className="FishTank" alt="fish tank" />
                 <img src={john} className="John" alt="john" />
-                <p className="Header">ZING VIDEO</p>
+                <p className="Header1">ZING VIDEO</p>
                 <img src={smith} className="Smith" alt="smith" />
-                <p className="Text">
+                <p className="Text1">
                     Platform and Organization for 
                     connect image-movers who didn't 
                     commit to the standard quality.
                 </p>
-                <div className="myarrow">
-                    <span class="line"></span>
-                    <div className="triangle">
-                        <span className="arrow left"></span>
-                        <span className="arrow right"></span>
+                <div className="myarrow1">
+                    <span class="line1"></span>
+                    <div className="triangle1">
+                        <span className="left1"></span>
+                        <span className="right1"></span>
                     </div>
                 </div>
                 <img src={lzingboi} className="LzingBoi" alt="LZINGBOI" />

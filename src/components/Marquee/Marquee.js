@@ -5,7 +5,7 @@ class Marquee extends React.Component {
 
     render() {
         return (
-            <div className="Marquee">
+        <div className="Marquee">
           <p> 
               TEWPARI BUALOI - TROPICALBOI - 
               TEWPARI BUALOI - TROPICALBOI -

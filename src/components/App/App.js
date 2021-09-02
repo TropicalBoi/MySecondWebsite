@@ -2,8 +2,8 @@ import React from 'react';
 import Landing from '../Landing/Landing';
 import Marquee from '../Marquee/Marquee';
 import Zing from '../Zing/Zing';
-import asyou from './AsYouGrowHome.jpg'
-import iwill from './IWillHome.jpg'
+import AsYou from '../AsYou/AsYou';
+import IWill from '../IWill/IWill';
 import './App.css';
 
 class App extends React.Component {
@@ -15,8 +15,8 @@ class App extends React.Component {
         <Marquee />
         <div className="App-body">
           <Zing />
-          <img src={asyou} className="AsYou" alt="as-you-grow-older-but-never-wiser" />
-          <img src={iwill} className="IWill" alt="i-will-always-think-of-you-fondly" />
+          <AsYou />
+          <IWill />
         </div>
       </div>
     )
