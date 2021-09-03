@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'ThunderLight';
+    src: url('../font/Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2'), /* Modern Browsers */
+         url('../font/Fonts/Web-PS/Thunder-LightLC.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+.AhShit {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Header4 {
+    position: absolute;
+    width: 396px;
+    height: 384px;
+    left: 269px;
+    top: 117px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100px;
+
+    display: flex;
+    align-items: center;
+
+    color: #14FFFF;
+    margin: 0;
+}
+
+.Year4 {
+    position: absolute;
+    width: 198px;
+    height: 126px;
+    left: 642px;
+    top: 537px;
+
+    font-family: 'ThunderLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 93px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #14FFFF;
+    margin: 0;
+}
+
+.CoverImg4 {
+    position: absolute;
+    width: 933px;
+    height: auto;
+    left: 904px;
+    top: 195px;
+}
+
+.Text4 {
+    position: absolute;
+    width: 340px;
+    height: 113px;
+    left: 269px;
+    top: 720px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.myarrow4 {
+    position: absolute;
+    left: 642px;
+    bottom: 112px;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.line4 {
+    border-top: 0.1rem solid #14FFFF;
+    border-bottom: 0.1rem solid #14FFFF;
+    display: inline-block;
+    width: 250px;
+    margin: 10px 0;
+    transition: width 1s ease-out
+}
+
+.line4::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .line4:hover {
+        width: 300px;
+    }
+}
+
+
+.triangle4{
+    display: flex;
+    flex-direction: column;
+}
+
+.right4{
+    transform: rotate(45deg);
+    transform-origin: top right;
+    border-right: 0.15rem solid #14FFFF;
+    height: 1rem;
+}
+
+.left4{
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+    border-left: 0.15rem solid #14FFFF;
+    height: 1rem;
+}
+
+@keyframes Width-out {
+    0% { transform: scaleX(100%) ;}
+    100% { transform: scaleX(140%); }
+}

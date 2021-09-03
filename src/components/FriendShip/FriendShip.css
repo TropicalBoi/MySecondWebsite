@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'ThunderLight';
+    src: url('../font/Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2'), /* Modern Browsers */
+         url('../font/Fonts/Web-PS/Thunder-LightLC.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+.FriendShip {
+    background-color: #F13939;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Header5 {
+    position: absolute;
+    width: 696px;
+    height: 448px;
+    left: 927px;
+    top: 164px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFF00;
+    margin: 0;
+}
+
+.Year5 {
+    position: absolute;
+    width: 198px;
+    height: 126px;
+    left: 1577px;
+    top: 113px;
+
+    font-family: 'ThunderLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 93px;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.CoverImg5 {
+    position: absolute;
+    width: 628px;
+    height: auto;
+    left: 200px;
+    top: 163px;
+}
+
+.Text5 {
+    position: absolute;
+    width: 315px;
+    height: 153px;
+    left: 939px;
+    top: 731px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.myarrow5 {
+    position: absolute;
+    left: 1400px;
+    bottom: 155px;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.line5 {
+    border-top: 0.1rem solid #FFFF00;
+    border-bottom: 0.1rem solid #FFFF00;
+    display: inline-block;
+    width: 250px;
+    margin: 10px 0;
+    transition: width 1s ease-out
+}
+
+.line5::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .line5:hover {
+        width: 300px;
+    }
+}
+
+
+.triangle5{
+    display: flex;
+    flex-direction: column;
+}
+
+.right5{
+    transform: rotate(45deg);
+    transform-origin: top right;
+    border-right: 0.15rem solid #FFFF00;
+    height: 1rem;
+}
+
+.left5{
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+    border-left: 0.15rem solid #FFFF00;
+    height: 1rem;
+}
+
+@keyframes Width-out {
+    0% { transform: scaleX(100%) ;}
+    100% { transform: scaleX(140%); }
+}
