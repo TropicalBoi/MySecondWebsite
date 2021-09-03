@@ -17,6 +17,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .Header4 {
@@ -97,10 +98,10 @@
 }
 
 .line4 {
-    border-top: 0.1rem solid #14FFFF;
-    border-bottom: 0.1rem solid #14FFFF;
     display: inline-block;
     width: 250px;
+    height: 2px;
+    background-color: #14FFFF;
     margin: 10px 0;
     transition: width 1s ease-out
 }

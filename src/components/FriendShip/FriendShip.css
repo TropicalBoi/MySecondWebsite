@@ -17,6 +17,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .Header5 {
@@ -97,10 +98,10 @@
 }
 
 .line5 {
-    border-top: 0.1rem solid #FFFF00;
-    border-bottom: 0.1rem solid #FFFF00;
     display: inline-block;
     width: 250px;
+    height: 2px;
+    background-color: #FFFF00;
     margin: 10px 0;
     transition: width 1s ease-out
 }

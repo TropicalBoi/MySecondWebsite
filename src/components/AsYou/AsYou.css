@@ -17,6 +17,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .Header2 {
@@ -62,9 +63,9 @@
 
 .CoverImg2 {
     position: absolute;
-    width: 570px;
-    height: auto;
-    right: 150px;
+    width: auto;
+    height: 800px;
+    left: 1200px;
     top: 48px;
 }
 
@@ -97,10 +98,11 @@
 }
 
 .line2 {
-    border-top: 0.1rem solid #F91A1A;
-    border-bottom: 0.1rem solid #F91A1A;
+
     display: inline-block;
     width: 250px;
+    height: 2px;
+    background-color: #F91A1A;
     margin: 10px 0;
     transition: width 1s ease-out
 }

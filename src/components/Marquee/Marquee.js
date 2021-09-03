@@ -10,6 +10,8 @@ class Marquee extends React.Component {
               TEWPARI BUALOI - TROPICALBOI - 
               TEWPARI BUALOI - TROPICALBOI -
               TEWPARI BUALOI - TROPICALBOI -
+              TEWPARI BUALOI - TROPICALBOI -
+              TEWPARI BUALOI - TROPICALBOI -
           </p>
         </div>
         )

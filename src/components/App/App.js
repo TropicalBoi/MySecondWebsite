@@ -15,13 +15,11 @@ class App extends React.Component {
       <div className="App">
         <Landing />
         <Marquee />
-        <div className="App-body">
-          <Zing />
-          <AsYou />
-          <IWill />
-          <AhShit />
-          <FriendShip />
-        </div>
+        <Zing />
+        <AsYou />
+        <IWill />
+        <AhShit />
+        <FriendShip />
       </div>
     )
   };
