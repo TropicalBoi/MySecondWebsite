@@ -1,62 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
 .Marquee {
-    position: fixed;
-    height: 0;
-    width: 100%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-    display: flex;
-    align-items: flex-end;
-    transform: rotate(90deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    z-index: 9;
+  position: fixed;
+  height: 0;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  display: flex;
+  align-items: flex-end;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  z-index: 9;
 }
-  
-.Marquee p{
-    margin: 0;
-    color:#C4C4C4 ;
-    background-color: black;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 1s linear infinite;
-    -webkit-animation: scroll-left 1s linear infinite;
-    animation: scroll-left 10s linear infinite;
+
+.Marquee p {
+  margin: 0;
+  color: #C4C4C4;
+  background-color: black;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 1s linear infinite;
+  -webkit-animation: scroll-left 1s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
-  
+
 @-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(0%);
-    }
-    100% {
-        -moz-transform: translateX(-50%);
-    }
+  0% {
+    -moz-transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
 }
-  
+
 @-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(0%);
-    }
-    100% {
-        -webkit-transform: translateX(-50%);
-    }
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
 }
-  
+
 @keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-    100% {
-        -moz-transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-    }
+  0% {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }

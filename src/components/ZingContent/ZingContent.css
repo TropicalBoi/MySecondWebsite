@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.ZingContent {
+  width: 800vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  z-index: 90;
+}
+
+p {
+  margin: 0;
+}
+
+.Zing1 {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #35E13C;
+}
+
+.ZingVLogo {
+  position: absolute;
+  width: 625px;
+  height: auto;
+  left: 250px;
+  top: 170px;
+  margin: 0;
+}
+
+.Gengar {
+  position: absolute;
+  width: 410px;
+  height: auto;
+  left: 642px;
+  top: 454px;
+}
+
+.Header {
+  position: absolute;
+  width: 287px;
+  height: 93px;
+  left: 1221px;
+  top: 207px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 163px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3E3181;
+}
+
+.TextZingC {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 446px;
+  height: 456px;
+  left: 1208px;
+  top: 352px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  text-indent: 70px;
+  color: #7A2ADF;
+}
+
+.FishTank1 {
+  position: absolute;
+  width: 200vw;
+  height: 100vh;
+  left: 200vw;
+  top: 0px;
+  background: #0094FF;
+}
+
+.FishTankText1 {
+  position: absolute;
+  width: 453px;
+  height: 313px;
+  left: 965px;
+  top: 530px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  text-indent: 100px;
+  color: #BBF120;
+}
