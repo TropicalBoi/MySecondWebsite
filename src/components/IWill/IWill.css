@@ -19,34 +19,26 @@
   scroll-snap-align: start;
 }
 
-.Header3 {
+.IWillFont {
   position: absolute;
-  width: 368px;
-  height: 450px;
-  left: 1414px;
-  top: 213px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 92px;
-  display: flex;
-  align-items: center;
-  color: #2E6C7A;
+  width: auto;
+  height: 47.5vh;
+  left: 73.6vw;
+  top: 15.8vh;
   margin: 0;
 }
 
 .Year3 {
   position: absolute;
-  width: 198px;
-  height: 126px;
-  left: 1120px;
-  top: 111px;
+  width: 10.3vw;
+  height: 13.3vh;
+  left: 58.3vw;
+  top: 11.7vh;
   font-family: 'ThunderLight';
   font-style: normal;
   font-weight: 300;
-  font-size: 100px;
-  line-height: 93px;
+  font-size: 10.5vh;
+  line-height: 9.8vh;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -56,31 +48,31 @@
 
 .CoverImg3 {
   position: absolute;
-  width: 755px;
+  width: 39.9vw;
   height: auto;
-  left: 269px;
-  top: 111px;
+  left: 14vw;
+  top: 11.7vh;
 }
 
 .Text3 {
   position: absolute;
-  width: 271px;
-  height: 85px;
-  left: 1125px;
-  bottom: 145px;
+  width: 14.1vw;
+  height: 8.9vh;
+  left: 58.5vw;
+  bottom: 15.3vh;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.5vh;
+  line-height: 3vh;
   color: #000000;
   margin: 0;
 }
 
 .myarrow3 {
   position: absolute;
-  left: 1500px;
-  bottom: 145px;
+  left: 78.1vw;
+  bottom: 15.3vh;
   display: flex;
   width: auto;
   flex-direction: row;
@@ -90,7 +82,7 @@
 
 .line3 {
   display: inline-block;
-  width: 250px;
+  width: 13vw;
   height: 2px;
   background-color: #557790;
   margin: 10px 0;
@@ -107,7 +99,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .line3:hover {
-    width: 300px;
+    width: 15.6vw;
   }
 }
 

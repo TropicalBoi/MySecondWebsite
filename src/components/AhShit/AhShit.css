@@ -19,34 +19,26 @@
   scroll-snap-align: start;
 }
 
-.Header4 {
+.AhShitFont {
   position: absolute;
-  width: 396px;
-  height: 384px;
-  left: 269px;
-  top: 117px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 100px;
-  display: flex;
-  align-items: center;
-  color: #14FFFF;
+  width: 20.6vw;
+  height: auto;
+  left: 14vw;
+  top: 12.3vh;
   margin: 0;
 }
 
 .Year4 {
   position: absolute;
-  width: 198px;
-  height: 126px;
-  left: 642px;
-  top: 537px;
+  width: 10.3vw;
+  height: 13.3vh;
+  left: 33.4vw;
+  top: 56.7vh;
   font-family: 'ThunderLight';
   font-style: normal;
   font-weight: 300;
-  font-size: 100px;
-  line-height: 93px;
+  font-size: 10.5vh;
+  line-height: 9.8vh;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -56,31 +48,31 @@
 
 .CoverImg4 {
   position: absolute;
-  width: 933px;
+  width: 51.7vw;
   height: auto;
-  left: 904px;
-  top: 195px;
+  left: 47vw;
+  top: 20.5vh;
 }
 
 .Text4 {
   position: absolute;
-  width: 340px;
-  height: 113px;
-  left: 269px;
-  top: 720px;
+  width: 17.7vw;
+  height: 11.9vh;
+  left: 14vw;
+  top: 76vh;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.5vh;
+  line-height: 3vh;
   color: #FFFFFF;
   margin: 0;
 }
 
 .myarrow4 {
   position: absolute;
-  left: 642px;
-  bottom: 112px;
+  left: 33.4vw;
+  bottom: 11.8vh;
   display: flex;
   width: auto;
   flex-direction: row;
@@ -90,7 +82,7 @@
 
 .line4 {
   display: inline-block;
-  width: 250px;
+  width: 13vw;
   height: 2px;
   background-color: #14FFFF;
   margin: 10px 0;
@@ -107,7 +99,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .line4:hover {
-    width: 300px;
+    width: 15.6vw;
   }
 }
 

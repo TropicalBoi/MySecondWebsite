@@ -1,77 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@font-face {
-  font-family: 'ThunderLight';
-  src: url('../font/Fonts/Web-PS/Thunder-LightLC.woff2') format('woff2'), /* Modern Browsers */
-  url('../font/Fonts/Web-PS/Thunder-LightLC.otf') format('opentype');
-  /* Safari, Android, iOS */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-.AsYou {
-  background-color: #E7E7E7;
+.Zing {
+  background-color: #0057FF;
   min-height: 100vh;
   display: flex;
   position: relative;
   width: 100%;
-  overflow: hidden;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
-.AsYouFont {
+.ZingLogo {
   position: absolute;
-  width: 18.75vw;
+  width: 23vw;
   height: auto;
-  left: 14vw;
-  top: 13.6vh;
-  margin: 0;
-}
-
-.Year2 {
-  position: absolute;
-  width: 10.3vw;
-  height: 13.3vh;
-  left: 39.8vw;
-  top: 13.6vh;
-  font-family: 'ThunderLight';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10.5vh;
-  line-height: 9.8vh;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #F91A1A;
-  margin: 0;
-}
-
-.CoverImg2 {
-  position: absolute;
-  width: auto;
-  height: 84.4vh;
   left: 62.5vw;
-  top: 5vh;
+  top: 16.3vh;
 }
 
-.Text2 {
+.Text1 {
   position: absolute;
-  width: 15.7vw;
-  height: 8.7vh;
-  left: 38.4vw;
-  bottom: 21.6vh;
+  width: 19.6vw;
+  height: 11.6vh;
+  left: 62.5vw;
+  bottom: 22.5vh;
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 2.5vh;
   line-height: 3vh;
   color: #000000;
-  margin: 0;
 }
 
-.myarrow2 {
+.FishTankMain {
   position: absolute;
-  left: 38.5vw;
+  width: 41.1vw;
+  height: auto;
+  left: 29.1vh;
+  top: 11.1vh;
+  z-index: 6;
+}
+
+.John {
+  position: absolute;
+  width: 17.4vw;
+  height: auto;
+  left: 8vw;
+  bottom: 0;
+  z-index: 8;
+}
+
+.Smith {
+  transform: scaleX(-1);
+  position: absolute;
+  width: 14vw;
+  height: auto;
+  left: 67.1vw;
+  bottom: 35.5vh;
+}
+
+.LzingBoi {
+  position: absolute;
+  width: 13vw;
+  height: auto;
+  right: 0;
+  bottom: 0;
+}
+
+.myarrow1 {
+  position: absolute;
+  left: 73vw;
   bottom: 12.6vh;
   display: flex;
   width: auto;
@@ -80,16 +77,16 @@
   height: auto;
 }
 
-.line2 {
+.line1 {
   display: inline-block;
   width: 13vw;
   height: 2px;
-  background-color: #F91A1A;
+  background-color: #47E473;
   margin: 10px 0;
   transition: width 1s ease-out
 }
 
-.line2::before {
+.line1::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -98,27 +95,27 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .line2:hover {
+  .line1:hover {
     width: 15.6vw;
   }
 }
 
-.triangle2 {
+.triangle1 {
   display: flex;
   flex-direction: column;
 }
 
-.right2 {
+.right1 {
   transform: rotate(45deg);
   transform-origin: top right;
-  border-right: 0.15rem solid #F91A1A;
+  border-right: 0.15rem solid #47E473;
   height: 1rem;
 }
 
-.left2 {
+.left1 {
   transform: rotate(-45deg);
   transform-origin: bottom right;
-  border-left: 0.15rem solid #F91A1A;
+  border-left: 0.15rem solid #47E473;
   height: 1rem;
 }
 

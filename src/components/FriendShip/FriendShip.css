@@ -19,34 +19,26 @@
   scroll-snap-align: start;
 }
 
-.Header5 {
+.FriendFont {
   position: absolute;
-  width: 696px;
-  height: 448px;
-  left: 927px;
-  top: 164px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 92px;
-  display: flex;
-  align-items: center;
-  color: #FFFF00;
+  width: 36.2vw;
+  height: auto;
+  left: 48.2vw;
+  top: 6.7vh;
   margin: 0;
 }
 
 .Year5 {
   position: absolute;
-  width: 198px;
-  height: 126px;
-  left: 1577px;
-  top: 113px;
+  width: 10.3vw;
+  height: 13.3vh;
+  left: 82.2vw;
+  top: 64.3vh;
   font-family: 'ThunderLight';
   font-style: normal;
   font-weight: 300;
-  font-size: 100px;
-  line-height: 93px;
+  font-size: 10.5vh;
+  line-height: 9.8vh;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -56,31 +48,31 @@
 
 .CoverImg5 {
   position: absolute;
-  width: 628px;
+  width: 32.7vw;
   height: auto;
-  left: 200px;
-  top: 163px;
+  left: 10.4vw;
+  top: 17.2vh;
 }
 
 .Text5 {
   position: absolute;
-  width: 315px;
-  height: 153px;
-  left: 939px;
-  top: 731px;
+  width: 16.4vw;
+  height: 16.1vh;
+  left: 48.9vw;
+  top: 77.1vh;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.5vh;
+  line-height: 3vh;
   color: #FFFFFF;
   margin: 0;
 }
 
 .myarrow5 {
   position: absolute;
-  left: 1400px;
-  bottom: 155px;
+  left: 72.9vw;
+  bottom: 16.3vh;
   display: flex;
   width: auto;
   flex-direction: row;
@@ -90,7 +82,7 @@
 
 .line5 {
   display: inline-block;
-  width: 250px;
+  width: 13vw;
   height: 2px;
   background-color: #FFFF00;
   margin: 10px 0;
@@ -107,7 +99,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .line5:hover {
-    width: 300px;
+    width: 15.6vw;
   }
 }
 
