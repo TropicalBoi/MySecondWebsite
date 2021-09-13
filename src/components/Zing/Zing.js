@@ -2,6 +2,7 @@ import React from "react";
 import "./Zing.css";
 import HorizontalScroll from "react-scroll-horizontal";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Player } from "video-react";
 import Home from "../App/App";
 import zingLogo from "./ZING_LOGO.png";
 import gengar from "./Gengar.jpg";
@@ -30,6 +31,24 @@ import TV from "./FishTank/FishTankGif/TV.png";
 import bubble from "./FishTank/FishTankGif/Bubble.gif";
 import weed1 from "./FishTank/FishTankGif/Weed1.gif";
 import weed2 from "./FishTank/FishTankGif/Weed2.gif";
+import ZZTVfont from "./ZZTV/ZZTV.png";
+import ZZTVpic1 from "./ZZTV/ZZTVpic1.jpg";
+import ZZTVpic2 from "./ZZTV/ZZTVpic2.jpg";
+import ZZTVpic3 from "./ZZTV/ZZTVpic3.jpg";
+import evaCongrats from "./ZZTV/ZZTVGif/evacongrats.gif";
+import cctv from "./ZZTV/ZZTVGif/cctv.gif";
+import gopro from "./ZZTV/ZZTVGif/gopro.gif";
+import iphone from "./ZZTV/ZZTVGif/iphone.gif";
+import laptop from "./ZZTV/ZZTVGif/laptop.gif";
+import steps from "./ZZTV/procedures.png";
+import smith from "../ZingMain/smith.gif";
+import ZZTV31 from "./ZZTV/ZZTVGif/ZZTV31.gif";
+import zingTestRun from "./ZZTV/ZZTV_test_run.mp4";
+import cardNoise from "./LZINGBOI/CardNoise.png";
+import LZSPIN from "./LZINGBOI/LZINGBOIspin.gif";
+import LZtext from "./LZINGBOI/LZText.png";
+import LZcolor1 from "./LZINGBOI/LZcolor1.jpg";
+import LZcolor2 from "./LZINGBOI/LZcolor2.jpg";
 
 class Zing extends React.Component {
   render() {
@@ -166,9 +185,85 @@ class Zing extends React.Component {
                   className="FishTankPic8"
                   alt="Fish Tank"
                 />
+                <p className="FishTankEnd">FISH TANK</p>
               </div>
-              <div className="ZZTV"></div>
-              <div className="LZingBoi"></div>
+              <div className="ZZTV">
+                <div className="fire"></div>
+                <img src={ZZTVfont} className="ZZTVfont" alt="ZZTV" />
+                <img src={evaCongrats} className="evaCongrats" alt="ZZTV" />
+                <img src={cctv} className="cctv" alt="ZZTV" />
+                <p className="ZZTVtext1">
+                  During 2020, a pandemic and rising of Thai people who can't
+                  endure the Freud democracy of military governance. Masses of
+                  Thai youths and pro-democracy march and protest the government
+                  due to the failure of economic, inequality, transparency,
+                  pandemic management and all other continuing innumerable
+                  corrupt deeds.
+                </p>
+                <p className="ZZTVtext2">
+                  In the 12nd of September 2020 was the day of the event “Act สิ
+                  Art by FreeArts” people gathered in front of the Bangkok Art
+                  and Cultural Center to raise their voices through live music,
+                  political statements, poem reading, and performance.
+                </p>
+                <img src={ZZTVpic1} className="ZZTVpic1" alt="ZZTV" />
+                <img src={ZZTVpic2} className="ZZTVpic2" alt="ZZTV" />
+                <p className="ZZTVtext3">
+                  ZING VIDEO in collaboration with Pasuth Sa-ingthong
+                  volunteered as surveillance cameras for the event by streaming
+                  live videos through our Facebook page in an attempt to report,
+                  ensure safety and record one of the significant moments of our
+                  time. Along with live streaming, we did jam images into the
+                  video to expand the atmosphere of the event and to express our
+                  opinion toward it.
+                </p>
+                <img src={gopro} className="Gopro" alt="ZZTV" />
+                <img src={iphone} className="Iphone" alt="ZZTV" />
+                <img src={laptop} className="Laptop" alt="ZZTV" />
+                <p className="S1">1</p>
+                <p className="S2">2</p>
+                <p className="S3">3</p>
+                <p className="S4">4</p>
+                <img src={steps} className="Steps" alt="ZZTV" />
+                <iframe
+                  src="https://player.vimeo.com/video/602404722?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=2772d231be"
+                  className="ZZZTVR31"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  title="ZZTV Round 3(+1), 2020."
+                ></iframe>
+                <p className="thistestrun">
+                  {" "}
+                  (this is a record of our test run.)
+                </p>
+                <Player
+                  className="ZZTVtestrun"
+                  fluid={false}
+                  width="12%"
+                  height="40%"
+                  src={zingTestRun}
+                  aspectRatio={"16:9"}
+                  type="video/mp4"
+                />
+                <img src={smith} className="Zmith" alt="ZZTV" />
+                <img src={ZZTVpic3} className="ZZTVpic3" alt="ZZTV" />
+                <img src={ZZTV31} className="ZZTVROUND" alt="ZZTV" />
+                <p className="ZZTVEnd">ZZTV</p>
+              </div>
+              <div className="LZingBoi">
+                <div className="LZCard">
+                  <img src={cardNoise} className="LZcardNoise" alt="LZINGBOI" />
+                  <img src={LZtext} className="LZtext" alt="LZINGBOI" />
+                  <img src={LZcolor1} className="LZcolor1" alt="LZINGBOI" />
+                  <img src={LZcolor2} className="LZcolor2" alt="LZINGBOI" />
+                </div>
+                <img src={LZSPIN} className="LZspin" alt="LZINGBOI" />
+                <div className="LZcontact">
+                  <p className="Contact">For more information please contact</p>
+                  <p className="Zingmail">zingvdo@gmail.com</p>
+                </div>
+              </div>
             </HorizontalScroll>
           </div>
         </Switch>

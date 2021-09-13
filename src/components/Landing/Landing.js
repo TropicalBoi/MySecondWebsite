@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import logoScale from './logoScale.svg';
-import logoScale2 from './logoScale2.svg';
-import video from './WebtewLanding10mbNoSound.mp4';
-import './Landing.css';
-import { Player } from 'video-react';
+import React from "react";
+import logo from "./logo.svg";
+import logoScale from "./logoScale.svg";
+import logoScale2 from "./logoScale2.svg";
+import landingvideo from "./WebtewLanding10mbNoSound.mp4";
+import "./Landing.css";
+import { Player } from "video-react";
 
 class Landing extends React.Component {
-
   render() {
     return (
       <div className="Landing">
@@ -16,18 +15,19 @@ class Landing extends React.Component {
           <img src={logoScale} className="Logo-scale" alt="logo" />
           <img src={logoScale2} className="Logo-scale2" alt="logo" />
           <img src={logo} className="Tew-logo" alt="logo" />
-          <Player className="Video"
+          <Player
+            className="Video"
             autoPlay={true}
             loop={true}
             muted={true}
             fluid={false}
-            src={video}
+            src={landingvideo}
             type="video/mp4"
           />
         </div>
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default Landing;
