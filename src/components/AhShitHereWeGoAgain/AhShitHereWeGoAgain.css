@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.AhShitContent {
+  width: 100vw;
+  height: 100vh;
+  scrollbar-width: none;
+}
+
+.BackArrowAhShit {
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 84.3vw;
+  top: 6.3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10;
+}
+
+.lineBAhShit {
+  display: inline-block;
+  width: 13vw;
+  height: 2px;
+  background-color: #FAFF00;
+  margin: 10px 0;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+  transition: width 1s ease-out
+}
+
+.lineBAhShit::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lineBAhShit:hover {
+    width: 15.6vw;
+  }
+}
+
+.triangleBAhShit {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightBAhShit {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  border-left: 0.15rem solid #FAFF00;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+}
+
+.leftBAhShit {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+  border-right: 0.15rem solid #FAFF00;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+}
+
+@keyframes Width-out {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(140%);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.AhShitContent1 {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #57E8E8, #57E8E8), linear-gradient(to right, #000000, #000000);
+  background-position: 0 0, 100vw 0;
+  background-size: 100vw 100vh, 100vw 100vh;
+}
+
+.AhShitFont {
+  position: absolute;
+  width: 19.2vw;
+  height: auto;
+  left: 9.7vw;
+  top: 13.3vh;
+}
+
+.AhShitGif1 {
+  position: absolute;
+  width: 15.8vw;
+  height: auto;
+  left: 39.2vw;
+  top: 16.3vh;
+  background: url("./PolitePooh.jpg") no-repeat;
+}
+
+.AhShitGif1:hover {
+  background: url("./PolitePoohRed.jpg") no-repeat;
+}
+
+.AhShitText1 {
+  position: absolute;
+  width: 26.4vw;
+  height: 27.8vh;
+  left: 30.5vw;
+  top: 63.2vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  text-indent: 2.6vw;
+  color: #000000;
+}
+
+.AhShitText2 {
+  position: absolute;
+  width: 15.4vw;
+  height: 2.5vh;
+  left: 59.11vw;
+  top: 31.4vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  color: #000000;
+}
+
+.AhShitText3 {
+  position: absolute;
+  width: 21.6vw;
+  height: 19.4vh;
+  left: 109.4vw;
+  top: 70.2vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  text-indent: 2.6vw;
+  color: #FFFFFF;
+}
+
+.AhShitPic1 {
+  position: absolute;
+  width: 20.5vw;
+  height: auto;
+  left: 67.7vw;
+  top: 54.4vh;
+}
+
+.AhShitPic2 {
+  position: absolute;
+  width: 34.2vw;
+  height: auto;
+  left: 78.5vw;
+  top: 3.8vh;
+}
+
+.AhShitVid {
+  position: absolute;
+  width: 67.2vw;
+  height: auto;
+  left: 128.5vw;
+  top: 11.5vh;
+}

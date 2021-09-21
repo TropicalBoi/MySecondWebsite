@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.AsYouContent {
+  width: 100vw;
+  height: 100vh;
+  scrollbar-width: none;
+}
+
+.BackArrowAsYou {
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 84.3vw;
+  top: 6.3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10;
+}
+
+.lineBAsYou {
+  display: inline-block;
+  width: 13vw;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: 10px 0;
+  box-shadow: 0 0 10px 2px #F32D2D;
+  transition: width 1s ease-out
+}
+
+.lineBAsYou::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lineBAsYou:hover {
+    width: 15.6vw;
+  }
+}
+
+.triangleBAsYou {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightBAsYou {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  border-left: 0.15rem solid #FFFFFF;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #F32D2D;
+}
+
+.leftBAsYou {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+  border-right: 0.15rem solid #FFFFFF;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #F32D2D;
+}
+
+@keyframes Width-out {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(140%);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.AsYouContent1 {
+  width: 300vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #F32D2D, #F32D2D), linear-gradient(to right, #000000, #000000);
+  background-position: 0 0, 100vw 0;
+  background-size: 100vw 100vh, 200vw 100vh;
+}
+
+.AsYouFont1 {
+  position: absolute;
+  width: 14.8vw;
+  height: auto;
+  left: 41.3vw;
+  top: 7.3vh;
+}
+
+.AsYouText1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 23.5vw;
+  height: 50.6vh;
+  left: 71vw;
+  top: 41.2vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  text-indent: 2.6vw;
+  color: #FFFFFF;
+}
+
+.AsYouText2 {
+  position: absolute;
+  width: 23.5vw;
+  height: 29.8vh;
+  left: 109.3vw;
+  top: 62.8vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  text-indent: 2.6vw;
+  color: #FFFFFF;
+}
+
+.AsYouText3 {
+  position: absolute;
+  width: 24.8vw;
+  height: 18vh;
+  left: 137vw;
+  top: 62.8vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+  text-align: justify;
+  text-indent: 2.6vw;
+  color: #FFFFFF;
+}
+
+.AsYouVid {
+  position: absolute;
+  width: 36.5vw;
+  height: auto;
+  left: 157.1vw;
+  top: 12.9vh;
+}
+
+.AsYouPic1 {
+  position: absolute;
+  width: 28.4vw;
+  height: auto;
+  left: 6.25vw;
+  top: 5.7vh;
+}
+
+.AsYouPic2 {
+  position: absolute;
+  width: 34.7vw;
+  height: auto;
+  left: 109.3vw;
+  top: 7.8vh;
+}
+
+.AsYouPic3 {
+  position: absolute;
+  width: 16.7vw;
+  height: auto;
+  left: 170.9vw;
+  top: 70vh;
+}
+
+.AsYouPic4 {
+  position: absolute;
+  width: 10.8vw;
+  height: auto;
+  left: 199.7vw;
+  top: 58.2vh;
+}
+
+.AsYouPic5 {
+  position: absolute;
+  width: 14.8vw;
+  height: auto;
+  left: 243.8vw;
+  top: 8.9vh;
+}
+
+.AsYouPic6 {
+  position: absolute;
+  width: 27.9vw;
+  height: auto;
+  left: 224.1vw;
+  top: 51.2vh;
+}
+
+.AsYouPic7 {
+  position: absolute;
+  width: 27.8vw;
+  height: auto;
+  left: 253vw;
+  top: 51.2vh;
+}
+
+.AsYouGif1 {
+  position: absolute;
+  width: 18.75vw;
+  height: auto;
+  left: 273vw;
+  top: 12.2vh;
+}
+
+.AsYouGif2 {
+  position: absolute;
+  width: 22.7vw;
+  height: auto;
+  left: 210.5vw;
+  top: 7.8vh;
+}

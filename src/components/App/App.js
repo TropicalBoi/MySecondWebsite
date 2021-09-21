@@ -7,33 +7,47 @@ import IWill from "../IWill/IWill";
 import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Zing from "../Zing/Zing";
+import AsYouGrowOlderButNeverWiser from "../AsYouGrowOlderButNeverWiser/AsYouGrowOlderButNeverWiser";
+import IWillAlwaysThinkOfYouFondly from "../IWillAlwaysThinkOfYouFondly/IWillAlwaysThinkOfYouFondly";
+import AhShitHereWeGoAgain from "../AhShitHereWeGoAgain/AhShitHereWeGoAgain";
+import FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend from "../FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend";
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route path="/Zing">
-            <Zing />
-          </Route>
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/Zing">
+          <Zing />
+        </Route>
+        <Route path="/AsYouGrowOlderButNeverWiser">
+          <AsYouGrowOlderButNeverWiser />
+        </Route>
+        <Route path="/IWillAlwaysThinkOfYouFondly">
+          <IWillAlwaysThinkOfYouFondly />
+        </Route>
+        <Route path="/AhShitHereWeGoAgain">
+          <AhShitHereWeGoAgain />
+        </Route>
+        <Route path="/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend">
+          <FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend />
+        </Route>
 
-          <Route path="/">
-            <div className="App">
-              <Landing />
-              <Marquee />
-              <ZingMain />
-              <AsYou />
-              <IWill />
-              <AhShit />
-              <FriendShip />
-            </div>
-          </Route>
-        </Switch>
-      </Router>
-    );
-  }
-}
+        <Route path="/">
+          <div className="App">
+            <Landing />
+            <Marquee />
+            <ZingMain />
+            <AsYou />
+            <IWill />
+            <AhShit />
+            <FriendShip />
+          </div>
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;

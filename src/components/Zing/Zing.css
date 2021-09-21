@@ -16,7 +16,7 @@
   scrollbar-width: none;
 }
 
-.BackArrow {
+.BackArrowZing {
   width: auto;
   height: auto;
   position: fixed;
@@ -28,7 +28,7 @@
   z-index: 10;
 }
 
-.lineB {
+.lineBZing {
   display: inline-block;
   width: 13vw;
   height: 2px;
@@ -38,7 +38,7 @@
   transition: width 1s ease-out
 }
 
-.lineB::before {
+.lineBZing::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -47,17 +47,17 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .lineB:hover {
+  .lineBZing:hover {
     width: 15.6vw;
   }
 }
 
-.triangleB {
+.triangleBZing {
   display: flex;
   flex-direction: column;
 }
 
-.rightB {
+.rightBZing {
   transform: rotate(-45deg);
   transform-origin: top left;
   border-left: 0.15rem solid #EFFF31;
@@ -65,7 +65,7 @@
   box-shadow: 0 0 10px 2px #FFFFFF;
 }
 
-.leftB {
+.leftBZing {
   transform: rotate(45deg);
   transform-origin: bottom left;
   border-right: 0.15rem solid #EFFF31;
@@ -109,7 +109,7 @@ p {
   top: 48vh;
 }
 
-.Header {
+.ZingFont {
   position: absolute;
   width: 15vw;
   height: 10vh;
@@ -164,7 +164,7 @@ p {
   top: 7.5vh;
 }
 
-.FishTankLogo {
+.FishTankFont {
   position: absolute;
   width: 25.1vw;
   height: auto;
@@ -471,7 +471,7 @@ p {
   background-repeat: repeat-x;
 }
 
-.ZZTVfont {
+.ZZTVFont {
   position: absolute;
   width: 20.3vw;
   height: auto;

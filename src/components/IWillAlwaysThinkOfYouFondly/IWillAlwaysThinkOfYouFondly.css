@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.IWillContent {
+  width: 100vw;
+  height: 100vh;
+  scrollbar-width: none;
+}
+
+.BackArrowIWill {
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 84.3vw;
+  top: 6.3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10;
+}
+
+.lineBIWill {
+  display: inline-block;
+  width: 13vw;
+  height: 2px;
+  background-color: #5582B8;
+  margin: 10px 0;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+  transition: width 1s ease-out
+}
+
+.lineBIWill::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lineBIWill:hover {
+    width: 15.6vw;
+  }
+}
+
+.triangleBIWill {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightBIWill {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  border-left: 0.15rem solid #5582B8;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+}
+
+.leftBIWill {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+  border-right: 0.15rem solid #5582B8;
+  height: 1rem;
+  box-shadow: 0 0 10px 2px #FFFFFF;
+}
+
+@keyframes Width-out {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(140%);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.IWillContent1 {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #B9C0BE, #B9C0BE), linear-gradient(to right, #D2D8D6, #D2D8D6);
+  background-position: 0 0, 100vw 0;
+  background-size: 100vw 100vh, 200vw 100vh;
+}
