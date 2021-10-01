@@ -51,7 +51,7 @@
   transform-origin: top left;
   border-left: 0.15rem solid #67FDF4;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #FFFFFF;
+  box-shadow: 0 0 10px 1px #FFFFFF;
 }
 
 .leftBFriendship {
@@ -59,7 +59,7 @@
   transform-origin: bottom left;
   border-right: 0.15rem solid #67FDF4;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #FFFFFF;
+  box-shadow: 0 0 10px 1px #FFFFFF;
 }
 
 @keyframes Width-out {

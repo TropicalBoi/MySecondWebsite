@@ -52,7 +52,7 @@
   transform-origin: top left;
   border-left: 0.15rem solid #FFFFFF;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #F32D2D;
+  box-shadow: 0 0 10px 1px #F32D2D;
 }
 
 .leftBAsYou {
@@ -60,7 +60,7 @@
   transform-origin: bottom left;
   border-right: 0.15rem solid #FFFFFF;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #F32D2D;
+  box-shadow: 0 0 10px 1px #F32D2D;
 }
 
 @keyframes Width-out {
@@ -149,7 +149,7 @@ p {
 .AsYouVid {
   position: absolute;
   width: 36.5vw;
-  height: auto;
+  height: 41.7vh;
   left: 157.1vw;
   top: 12.9vh;
 }

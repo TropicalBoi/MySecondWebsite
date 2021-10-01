@@ -16,10 +16,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
 }
 
-.IWillFont {
+.IWillLogo {
   position: absolute;
   width: auto;
   height: 47.5vh;

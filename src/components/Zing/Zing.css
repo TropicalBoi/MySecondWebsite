@@ -456,7 +456,7 @@ p {
   position: relative;
   align-items: flex-end;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #7A2ADF, #7A2ADF), linear-gradient(to right, #EFFF31, #EFFF31), url(./ZZTV3BG.jpg);
+  background-image: linear-gradient(to right, #7A2ADF, #7A2ADF), linear-gradient(to right, #EFFF31, #EFFF31), url(./ZingMain/ZZTV3BG.jpg);
   background-position: 0 0, 100vw 0, 200vw 0;
   background-size: 100vw 100vh, 100vw 100vh, 100vw 100vh;
 }
@@ -747,7 +747,7 @@ p {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url(./LzingBoiBG.jpg);
+  background-image: url(./ZingMain/LzingBoiBG.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -6,6 +6,7 @@ import AsYou from "../AsYou/AsYou";
 import IWill from "../IWill/IWill";
 import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
+import DDE from "../DDE/DDE";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Zing from "../Zing/Zing";
@@ -43,6 +44,7 @@ const App = () => {
             <IWill />
             <AhShit />
             <FriendShip />
+            <DDE />
           </div>
         </Route>
       </Switch>

@@ -9,7 +9,7 @@ const IWill = () => {
     <div className="IWill" id="IWill">
       <img
         src={IWillFont}
-        className="IWillFont"
+        className="IWillLogo"
         alt="I will always think of you fondly."
       />
       <p className="Year3">(2019)</p>

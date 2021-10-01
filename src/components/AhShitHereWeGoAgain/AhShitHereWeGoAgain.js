@@ -23,18 +23,24 @@ const AhShitHereWeGoAgain = () => {
             className="AhShitFont"
             alt="Ah shit, here we go again."
           />
-          <div className="AhShitGif1"></div>
+          <div className="AhShitPooh"></div>
           <p className="AhShitText1">
-            This piece is a response to a previous piece (Friendship ended with
-            Mudasir now Salman is my best friend., 2018.) I submitted for a
-            show. The initial piece was rejected because it was deemed too
-            political by the institution. Consequently, the title of this piece
-            is a reference to a meme where the main character of a video game is
-            faced with the same obstacle again and declares ‘Ah shit, here we go
-            again’. Many artists here in Thailand have similarly been censored
-            for their political artwork and face the obstacle of an
-            authoritarian state. Other pop culture references are employed to
-            rely on coded language to express this absurd cycle.
+            This piece is a response to a previous piece
+            <HashLink
+              to="/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend"
+              className="TextLink"
+            >
+              (Friendship ended with Mudasir now Salman is my best friend.,
+              2018.)
+            </HashLink>
+            I submitted for a show. The initial piece was rejected because it
+            was deemed too political by the institution. Consequently, the title
+            of this piece is a reference to a meme where the main character of a
+            video game is faced with the same obstacle again and declares ‘Ah
+            shit, here we go again’. Many artists here in Thailand have
+            similarly been censored for their political artwork and face the
+            obstacle of an authoritarian state. Other pop culture references are
+            employed to rely on coded language to express this absurd cycle.
           </p>
           <p className="AhShitText2">( Video single screen, 4.01 mins )</p>
           <img

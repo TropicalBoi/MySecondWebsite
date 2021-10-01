@@ -51,7 +51,7 @@
   transform-origin: top left;
   border-left: 0.15rem solid #FAFF00;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #FFFFFF;
+  box-shadow: 0 0 10px 1px #FFFFFF;
 }
 
 .leftBAhShit {
@@ -59,7 +59,7 @@
   transform-origin: bottom left;
   border-right: 0.15rem solid #FAFF00;
   height: 1rem;
-  box-shadow: 0 0 10px 2px #FFFFFF;
+  box-shadow: 0 0 10px 1px #FFFFFF;
 }
 
 @keyframes Width-out {
@@ -73,6 +73,14 @@
 
 p {
   margin: 0;
+}
+
+.TextLink {
+  text-decoration: none;
+}
+
+.TextLink:hover {
+  text-decoration: wavy underline;
 }
 
 .AhShitContent1 {
@@ -95,17 +103,17 @@ p {
   top: 13.3vh;
 }
 
-.AhShitGif1 {
+.AhShitPooh {
   position: absolute;
   width: 15.8vw;
   height: auto;
   left: 39.2vw;
   top: 16.3vh;
-  background: url("./PolitePooh.jpg") no-repeat;
+  background: url("./Images/PolitePooh.jpg") no-repeat;
 }
 
-.AhShitGif1:hover {
-  background: url("./PolitePoohRed.jpg") no-repeat;
+.AhShitPooh:hover {
+  background: url("./Images/PolitePoohRed.jpg") no-repeat;
 }
 
 .AhShitText1 {
@@ -120,7 +128,7 @@ p {
   font-size: 1.9vh;
   line-height: 2.3vh;
   text-align: justify;
-  text-indent: 2.6vw;
+  text-indent: 8vw;
   color: #000000;
 }
 
@@ -143,7 +151,7 @@ p {
   position: absolute;
   width: 21.6vw;
   height: 19.4vh;
-  left: 109.4vw;
+  left: 103.4vw;
   top: 70.2vh;
   font-family: Montserrat;
   font-style: normal;
@@ -174,7 +182,7 @@ p {
 .AhShitVid {
   position: absolute;
   width: 67.2vw;
-  height: auto;
+  height: 76.7vh;
   left: 128.5vw;
   top: 11.5vh;
 }

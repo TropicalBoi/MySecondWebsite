@@ -5,7 +5,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  scroll-snap-align: center;
+  scroll-snap-align: end;
 }
 
 .ZingLogo {

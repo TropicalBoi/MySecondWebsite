@@ -1,5 +1,5 @@
-import zingLogo from "./ZING_LOGO.png";
-import gengar from "./Gengar.jpg";
+import zingLogo from "./ZingMain/ZING_LOGO.png";
+import gengar from "./ZingMain/Gengar.jpg";
 import FishTankOpencall from "./FishTank/FishTankOpencall.jpg";
 import FishTankFont from "./FishTank/FishTankLogo.png";
 import FishTankPic1 from "./FishTank/Fish_Tank_01.jpg";

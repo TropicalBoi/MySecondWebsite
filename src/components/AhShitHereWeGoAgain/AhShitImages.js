@@ -1,6 +1,6 @@
-import AhShitFont from "./AhShitFont.png";
-import AhShitPic1 from "./AhShitPic1.jpg";
-import AhShitPic2 from "./AhShitPic2.jpg";
+import AhShitFont from "./Images/AhShitFont.png";
+import AhShitPic1 from "./Images/AhShitPic1.jpg";
+import AhShitPic2 from "./Images/AhShitPic2.jpg";
 
 export default {
   AhShitFont,
