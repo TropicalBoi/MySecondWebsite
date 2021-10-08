@@ -3,6 +3,7 @@ import "./IWillAlwaysThinkOfYouFondly.css";
 import HorizontalScroll from "react-scroll-horizontal";
 import { HashLink } from "react-router-hash-link";
 import IWillImages from "./IWillImages";
+import { GlassMagnifier } from "react-image-magnifiers";
 
 const IWillAlwaysThinkOfYouFondly = () => {
   return (
@@ -107,6 +108,25 @@ const IWillAlwaysThinkOfYouFondly = () => {
             this page I demonstrated a result according to my initial
             intention.)
           </p>
+          <GlassMagnifier
+            imageSrc={IWillImages.PaperMockBlank}
+            className="IWillPaperMockBlank"
+            alt="I will always think of you fondly.,2019"
+          />
+          <div className="IWillPaperMock">
+            <GlassMagnifier
+              imageSrc={IWillImages.PaperMock}
+              imageAlt="I will always think of you fondly.,2019"
+              style={{
+                width: "1776px",
+                height: "640px",
+                left: "4045px",
+                top: "182px",
+                opacity: 100,
+                zIndex: 3,
+              }}
+            />
+          </div>
           <div className="IWillAW3">
             <p>Untitled</p>
             <p>(A video file transformed to base64 string), 2019</p>

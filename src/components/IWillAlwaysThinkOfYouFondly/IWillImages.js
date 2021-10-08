@@ -22,6 +22,8 @@ import IWillPic20 from "./Images/IWillPic20.jpg";
 import IWillPic21 from "./Images/IWillPic21.jpg";
 import IWillPic22 from "./Images/IWillPic22.jpg";
 import IWillPic23 from "./Images/IWillPic23.jpg";
+import PaperMockBlank from "./Images/PaperMockBlank.png";
+import PaperMock from "./Images/PaperMock.png";
 
 export default {
   IWillFont,
@@ -48,4 +50,6 @@ export default {
   IWillPic21,
   IWillPic22,
   IWillPic23,
+  PaperMockBlank,
+  PaperMock,
 };

@@ -9,6 +9,7 @@ import FriendShip from "../FriendShip/FriendShip";
 import DDE from "../DDE/DDE";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "../About/About";
 import Zing from "../Zing/Zing";
 import AsYouGrowOlderButNeverWiser from "../AsYouGrowOlderButNeverWiser/AsYouGrowOlderButNeverWiser";
 import IWillAlwaysThinkOfYouFondly from "../IWillAlwaysThinkOfYouFondly/IWillAlwaysThinkOfYouFondly";
@@ -19,6 +20,9 @@ const App = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/About">
+          <About />
+        </Route>
         <Route path="/Zing">
           <Zing />
         </Route>
