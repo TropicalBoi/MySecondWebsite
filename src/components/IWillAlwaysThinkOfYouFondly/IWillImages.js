@@ -25,7 +25,7 @@ import IWillPic23 from "./Images/IWillPic23.jpg";
 import PaperMockBlank from "./Images/PaperMockBlank.png";
 import PaperMock from "./Images/PaperMock.png";
 
-export default {
+const IWillImages = {
   IWillFont,
   IWillPic1,
   IWillPic2,
@@ -53,3 +53,5 @@ export default {
   PaperMockBlank,
   PaperMock,
 };
+
+export default IWillImages;

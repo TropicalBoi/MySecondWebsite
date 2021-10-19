@@ -287,7 +287,7 @@ const IWillAlwaysThinkOfYouFondly = () => {
             </p>
           </div>
           <p className="IWillAW7Text2">
-            For Speedy Granma Centennial, I revisits I will always think of you
+            For Speedy Grandma Centennial, I revisits I will always think of you
             fondly. (2019), exhibited in the EARLY YEARS PROJECT #4 PRAXIS MAKES
             PERFECT at Bangkok Art and Culture Centre (BACC). This time, I
             presented the background of the piece, what’s already exhibited, and

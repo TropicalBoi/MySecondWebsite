@@ -6,7 +6,7 @@ import friendshipPic4 from "./Images/FriendshipPic4.jpg";
 import friendshipPic5 from "./Images/FriendshipPic5.jpg";
 import friendshipPic6 from "./Images/FriendshipPic6.jpg";
 
-export default {
+const FriendshipImages = {
   friendshipFont,
   friendshipPic1,
   friendshipPic2,
@@ -15,3 +15,5 @@ export default {
   friendshipPic5,
   friendshipPic6,
 };
+
+export default FriendshipImages;

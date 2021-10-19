@@ -1,9 +1,0 @@
-.App {
-  display: flex;
-  flex-flow: column nowrap;
-  max-height: 100vh;
-  width: auto;
-  scrollbar-width: none;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}

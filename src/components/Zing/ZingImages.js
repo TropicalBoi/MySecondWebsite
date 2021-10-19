@@ -44,7 +44,7 @@ import LZtext from "./LZINGBOI/LZText.png";
 import LZcolor1 from "./LZINGBOI/LZcolor1.jpg";
 import LZcolor2 from "./LZINGBOI/LZcolor2.jpg";
 
-export default {
+const ZingImages = {
   zingLogo,
   gengar,
   FishTankOpencall,
@@ -91,3 +91,5 @@ export default {
   LZcolor1,
   LZcolor2,
 };
+
+export default ZingImages;

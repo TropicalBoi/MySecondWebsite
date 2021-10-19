@@ -3,8 +3,8 @@ import "./Marquee.css";
 
 const Marquee = () => {
   return (
-    <div className="Marquee">
-      <p>
+    <div>
+      <p className="MarqueeP">
         TEWPARI BUALOI - TROPICALBOI - TEWPARI BUALOI - TROPICALBOI - TEWPARI
         BUALOI - TROPICALBOI - TEWPARI BUALOI - TROPICALBOI - TEWPARI BUALOI -
         TROPICALBOI -

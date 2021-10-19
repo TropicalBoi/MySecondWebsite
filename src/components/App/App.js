@@ -7,14 +7,25 @@ import IWill from "../IWill/IWill";
 import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
 import DDE from "../DDE/DDE";
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { css } from "@emotion/css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "../About/About";
 import Zing from "../Zing/Zing";
 import AsYouGrowOlderButNeverWiser from "../AsYouGrowOlderButNeverWiser/AsYouGrowOlderButNeverWiser";
 import IWillAlwaysThinkOfYouFondly from "../IWillAlwaysThinkOfYouFondly/IWillAlwaysThinkOfYouFondly";
 import AhShitHereWeGoAgain from "../AhShitHereWeGoAgain/AhShitHereWeGoAgain";
 import FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend from "../FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend";
+
+document.body.onmousemove = function (e) {
+  document.documentElement.style.setProperty(
+    "--x",
+    e.clientX + window.scrollX + "px"
+  );
+  document.documentElement.style.setProperty(
+    "--y",
+    e.clientY + window.scrollY + "px"
+  );
+};
 
 const App = () => {
   return (
@@ -40,9 +51,41 @@ const App = () => {
         </Route>
 
         <Route path="/">
-          <div className="App">
+          <div
+            className={css`
+              display: flex;
+              flex-flow: column nowrap;
+              max-height: 100vh;
+              width: auto;
+              scrollbar-width: none;
+              overflow-y: scroll;
+              scroll-snap-type: y mandatory;
+            `}
+          >
             <Landing />
-            <Marquee />
+            <Link
+              className={css`
+                position: fixed;
+                height: 0;
+                width: 100%;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4vh;
+                display: flex;
+                align-items: flex-end;
+                transform: rotate(90deg);
+                transform-origin: left bottom;
+                white-space: nowrap;
+                z-index: 9;
+                &:hover {
+                  text-decoration: none;
+                }
+              `}
+              to="/About"
+            >
+              <Marquee />
+            </Link>
             <ZingMain />
             <AsYou />
             <IWill />

@@ -2,8 +2,9 @@ import React from "react";
 import "./Zing.css";
 import HorizontalScroll from "react-scroll-horizontal";
 import { HashLink } from "react-router-hash-link";
-import { Player } from "video-react";
+import ReactPlayer from "react-player";
 import zingImages from "./ZingImages";
+import { css } from "@emotion/css";
 
 const Zing = () => {
   return (
@@ -186,14 +187,15 @@ const Zing = () => {
             title="ZZTV Round 3(+1), 2020."
           ></iframe>
           <p className="thistestrun"> (this is a record of our test run.)</p>
-          <Player
-            className="ZZTVtestrun"
-            fluid={false}
-            width="12%"
-            height="40%"
-            src={zingImages.zingTestRun}
-            aspectRatio={"16:9"}
-            type="video/mp4"
+          <ReactPlayer
+            className={css`
+              position: absolute;
+              left: 234vw;
+              top: 43vh;
+            `}
+            url={zingImages.zingTestRun}
+            height="auto"
+            controls={true}
           />
           <img src={zingImages.smith} className="Zmith" alt="ZZTV" />
           <img src={zingImages.ZZTVpic3} className="ZZTVpic3" alt="ZZTV" />

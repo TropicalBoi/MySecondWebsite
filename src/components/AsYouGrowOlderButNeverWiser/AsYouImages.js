@@ -9,7 +9,7 @@ import AsYouPic7 from "./Images/AsYouPic7.jpg";
 import AsYouGif1 from "./Images/AsYouGif1.gif";
 import AsYouGif2 from "./Images/AsYouGif2.gif";
 
-export default {
+const AsYouImages = {
   AsYouFont1,
   AsYouPic1,
   AsYouPic2,
@@ -21,3 +21,5 @@ export default {
   AsYouGif1,
   AsYouGif2,
 };
+
+export default AsYouImages;
