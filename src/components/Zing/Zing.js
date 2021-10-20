@@ -194,7 +194,8 @@ const Zing = () => {
               top: 43vh;
             `}
             url={zingImages.zingTestRun}
-            height="auto"
+            height="30vh"
+            width="33.3vw"
             controls={true}
           />
           <img src={zingImages.smith} className="Zmith" alt="ZZTV" />

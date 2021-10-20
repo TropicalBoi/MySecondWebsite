@@ -3,7 +3,7 @@ import logo from "../Landing/logo.svg";
 import profilePic from "./ProfilePic.png";
 import Aboutvideo from "./WebTewAboutLanding.mp4";
 import { css, injectGlobal } from "@emotion/css";
-import { Player } from "video-react";
+import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 injectGlobal`
@@ -108,7 +108,7 @@ const About = () => {
             `}
             alt="logo"
           />
-          <Player
+          <ReactPlayer
             className={css`
               position: absolute;
               min-height: 100vh;
@@ -116,12 +116,12 @@ const About = () => {
               z-index: -9999;
               object-fit: fill;
             `}
-            autoPlay={true}
+            playing={true}
             loop={true}
             muted={true}
-            fluid={false}
-            src={Aboutvideo}
-            type="video/mp4"
+            url={Aboutvideo}
+            width="100vw"
+            height="auto"
           />
         </div>
       </div>

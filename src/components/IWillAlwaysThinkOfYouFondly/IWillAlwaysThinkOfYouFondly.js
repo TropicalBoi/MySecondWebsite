@@ -118,13 +118,14 @@ const IWillAlwaysThinkOfYouFondly = () => {
               imageSrc={IWillImages.PaperMock}
               imageAlt="I will always think of you fondly.,2019"
               style={{
-                width: "1776px",
-                height: "640px",
-                left: "4045px",
-                top: "182px",
+                width: "92.5vw",
+                height: "67.5vh",
+                left: "210.6vw",
+                top: "19.2vh",
                 opacity: 100,
                 zIndex: 3,
               }}
+              largeImageSrc={IWillImages.PaperMockL}
             />
           </div>
           <div className="IWillAW3">

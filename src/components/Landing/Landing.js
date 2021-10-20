@@ -4,7 +4,7 @@ import logoScale from "./logoScale.svg";
 import logoScale2 from "./logoScale2.svg";
 import landingvideo from "./WebtewLanding10mbNoSound.mp4";
 import { css, injectGlobal, keyframes } from "@emotion/css";
-import { Player } from "video-react";
+import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 injectGlobal`
@@ -126,7 +126,7 @@ const Landing = () => {
           alt="logo"
         />
 
-        <Player
+        <ReactPlayer
           className={css`
             position: absolute;
             min-height: 100vh;
@@ -134,12 +134,12 @@ const Landing = () => {
             z-index: -9999;
             object-fit: fill;
           `}
-          autoPlay={true}
+          playing={true}
           loop={true}
           muted={true}
-          fluid={false}
-          src={landingvideo}
-          type="video/mp4"
+          url={landingvideo}
+          width="100vw"
+          height="auto"
         />
       </div>
     </div>
