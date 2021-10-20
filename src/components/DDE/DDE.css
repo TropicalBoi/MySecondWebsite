@@ -20,8 +20,8 @@
   font-family: RuneScape Quill;
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 8.4vh;
+  line-height: 9.5vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -31,7 +31,7 @@
 
 .Torch1 {
   position: relative;
-  height: unset;
+  height: 15vh;
   width: auto;
   transform: scaleX(-1);
   left: 4.7vh;

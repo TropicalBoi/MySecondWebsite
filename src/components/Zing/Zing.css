@@ -683,7 +683,6 @@ p {
   left: 180.7vw;
   width: 45.8vw;
   height: 52vh;
-  box-shadow: 0 0 30px 15px #FFFFFF;
 }
 
 .thistestrun {
@@ -829,6 +828,7 @@ p {
   height: 3.2vh;
   display: flex;
   justify-content: center;
+  z-index: 20;
 }
 
 .Contact {
