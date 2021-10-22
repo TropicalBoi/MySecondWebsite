@@ -46,6 +46,7 @@ const Landing = () => {
     <div
       className={css`
         min-height: 100vh;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -55,7 +56,7 @@ const Landing = () => {
         position: relative;
         width: 100%;
         overflow: hidden;
-        z-index: 100;
+        z-index: 300;
         scroll-snap-align: end;
       `}
     >
@@ -93,7 +94,7 @@ const Landing = () => {
             height: 100%;
             object-fit: cover;
           `}
-          alt="logo"
+          alt="logo1"
         />
         <div
           className={css`
@@ -114,7 +115,7 @@ const Landing = () => {
               height: 100%;
               object-fit: cover;
             `}
-            alt="logo"
+            alt="logo2"
           />
         </div>
         <img
@@ -123,7 +124,7 @@ const Landing = () => {
             height: 100vmin;
             width: 100%;
           `}
-          alt="logo"
+          alt="logo3"
         />
 
         <ReactPlayer

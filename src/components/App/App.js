@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
 import ZingMain from "../ZingMain/ZingMain";
@@ -8,7 +8,7 @@ import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
 import DDE from "../DDE/DDE";
 import { css } from "@emotion/css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "../About/About";
 import Zing from "../Zing/Zing";
 import AsYouGrowOlderButNeverWiser from "../AsYouGrowOlderButNeverWiser/AsYouGrowOlderButNeverWiser";
@@ -16,18 +16,17 @@ import IWillAlwaysThinkOfYouFondly from "../IWillAlwaysThinkOfYouFondly/IWillAlw
 import AhShitHereWeGoAgain from "../AhShitHereWeGoAgain/AhShitHereWeGoAgain";
 import FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend from "../FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend";
 
-document.body.onmousemove = function (e) {
-  document.documentElement.style.setProperty(
-    "--x",
-    e.clientX + window.scrollX + "px"
-  );
-  document.documentElement.style.setProperty(
-    "--y",
-    e.clientY + window.scrollY + "px"
-  );
-};
-
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadFiveSeconds = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      setLoading(false);
+    };
+    loadFiveSeconds();
+  });
+
   return (
     <Router>
       <Switch>
@@ -62,36 +61,22 @@ const App = () => {
               scroll-snap-type: y mandatory;
             `}
           >
-            <Landing />
-            <Link
-              className={css`
-                position: fixed;
-                height: 0;
-                width: 100%;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 4vh;
-                display: flex;
-                align-items: flex-end;
-                transform: rotate(90deg);
-                transform-origin: left bottom;
-                white-space: nowrap;
-                z-index: 9;
-                &:hover {
-                  text-decoration: none;
-                }
-              `}
-              to="/About"
-            >
-              <Marquee />
-            </Link>
-            <ZingMain />
-            <AsYou />
-            <IWill />
-            <AhShit />
-            <FriendShip />
-            <DDE />
+            {loading ? (
+              <div>
+                <h1 style={{ color: "white" }}> Loading </h1>
+              </div>
+            ) : (
+              <>
+                <Landing />
+                <Marquee />
+                <ZingMain />
+                <AsYou />
+                <IWill />
+                <AhShit />
+                <FriendShip />
+                <DDE />
+              </>
+            )}
           </div>
         </Route>
       </Switch>

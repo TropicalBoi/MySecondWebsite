@@ -108,7 +108,7 @@ a:hover {
 .IWillFont {
   position: absolute;
   width: 14.5vw;
-  height: 52.1vh;
+  height: auto;
   left: 10.5vw;
   top: 8.3vh;
 }
@@ -116,7 +116,7 @@ a:hover {
 .IWillPic1 {
   position: absolute;
   width: 27.7vw;
-  height: 25.8vh;
+  height: auto;
   left: 36.3vw;
   top: 35.1vh;
 }
@@ -124,7 +124,7 @@ a:hover {
 .IWillPic2 {
   position: absolute;
   width: 31.9vw;
-  height: 44.1vh;
+  height: auto;
   left: 134vw;
   top: 10vh;
 }
@@ -132,7 +132,7 @@ a:hover {
 .IWillPic3 {
   position: absolute;
   width: 30.1vw;
-  height: 44vh;
+  height: auto;
   left: 173.6vw;
   top: 50.8vh;
 }
@@ -140,7 +140,7 @@ a:hover {
 .IWillPic4 {
   position: absolute;
   width: 27.3vw;
-  height: 25.7vh;
+  height: auto;
   left: 208.4vw;
   top: 8vh;
 }
@@ -148,7 +148,7 @@ a:hover {
 .IWillPic5 {
   position: absolute;
   width: 34.3vw;
-  height: 46.4vh;
+  height: auto;
   left: 252.7vw;
   top: 12vh;
 }
@@ -156,7 +156,7 @@ a:hover {
 .IWillPic6 {
   position: absolute;
   width: 24.5vw;
-  height: 81.5vh;
+  height: auto;
   left: 404.3vw;
   top: 9vh;
 }
@@ -164,7 +164,7 @@ a:hover {
 .IWillPic7 {
   position: absolute;
   width: 18vw;
-  height: 24.3vh;
+  height: auto;
   left: 453.75vw;
   top: 66.5vh;
 }
@@ -172,7 +172,7 @@ a:hover {
 .IWillPic8 {
   position: absolute;
   width: 26.5vw;
-  height: 87.1vh;
+  height: auto;
   left: 480vw;
   top: 6.8vh;
 }
@@ -180,7 +180,7 @@ a:hover {
 .IWillPic9 {
   position: absolute;
   width: 25.4vw;
-  height: 34.3vh;
+  height: auto;
   left: 510.9vw;
   top: 7.6vh;
 }
@@ -188,7 +188,7 @@ a:hover {
 .IWillPic10 {
   position: absolute;
   width: 18.6vw;
-  height: 32.2vh;
+  height: auto;
   left: 547vw;
   top: 7.6vh;
 }
@@ -196,7 +196,7 @@ a:hover {
 .IWillPic11 {
   position: absolute;
   width: 23.6vw;
-  height: 31.8vh;
+  height: auto;
   left: 576.3vw;
   top: 7.6vh;
 }
@@ -204,7 +204,7 @@ a:hover {
 .IWillPic12 {
   position: absolute;
   width: 27.6vw;
-  height: 37.2vh;
+  height: auto;
   left: 557.3vw;
   top: 51.1vh;
 }
@@ -212,7 +212,7 @@ a:hover {
 .IWillPic13 {
   position: absolute;
   width: 14.4vw;
-  height: 43.9vh;
+  height: auto;
   left: 633.6vw;
   top: 19.6vh;
 }
@@ -220,7 +220,7 @@ a:hover {
 .IWillPic14 {
   position: absolute;
   width: 42.2vw;
-  height: 69.2vh;
+  height: auto;
   left: 651.7vw;
   top: 15.4vh;
 }
@@ -228,7 +228,7 @@ a:hover {
 .IWillPic15 {
   position: absolute;
   width: 26.4vw;
-  height: 55.1vh;
+  height: auto;
   left: 792.7vw;
   top: 8.8vh;
 }
@@ -236,7 +236,7 @@ a:hover {
 .IWillPic16 {
   position: absolute;
   width: 33.9vw;
-  height: 44.3vh;
+  height: auto;
   left: 850vw;
   top: 52.1vh;
 }
@@ -244,7 +244,7 @@ a:hover {
 .IWillPic17 {
   position: absolute;
   width: 31.8vw;
-  height: 43.1vh;
+  height: auto;
   left: 871.1vw;
   top: 4.4vh;
 }
@@ -252,7 +252,7 @@ a:hover {
 .IWillPic18 {
   position: absolute;
   width: 28.3vw;
-  height: 38.3vh;
+  height: auto;
   left: 909.6vw;
   top: 8vh;
 }
@@ -260,7 +260,7 @@ a:hover {
 .IWillPic19 {
   position: absolute;
   width: 29.9vw;
-  height: 40.1vh;
+  height: auto;
   left: 920vw;
   top: 53.7vh;
 }
@@ -268,14 +268,14 @@ a:hover {
 .IWillPic20 {
   position: absolute;
   width: 29.3vw;
-  height: 89.2vh;
+  height: auto;
   left: 962.3vw;
   top: 4.6vh;
 }
 
 .IWillPic21 {
   position: absolute;
-  width: 37.4vw;
+  width: auto;
   height: 100vh;
   left: 1000vw;
   top: 0;
@@ -284,14 +284,14 @@ a:hover {
 .IWillPic22 {
   position: absolute;
   width: 29vw;
-  height: 58.9vh;
+  height: auto;
   left: 1096.6vw;
   top: 24.2vh;
 }
 
 .IWillPic23 {
   position: absolute;
-  width: 200vw;
+  width: auto;
   height: 100vh;
   left: 1130vw;
   top: 0px;
@@ -728,7 +728,7 @@ a:hover {
   position: absolute;
   width: 8.3vw;
   height: 2.5vh;
-  left: 994.89vw;
+  left: 944.89vw;
   top: 24.2vh;
   font-family: Montserrat;
   font-style: normal;

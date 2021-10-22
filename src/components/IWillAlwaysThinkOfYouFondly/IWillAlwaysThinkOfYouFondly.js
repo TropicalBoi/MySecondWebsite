@@ -198,7 +198,11 @@ const IWillAlwaysThinkOfYouFondly = () => {
             className="IWillPic12"
             alt="I will always think of you fondly.,2019"
           />
-          <p className="IWillAW5">Untitled (132 QR codes), 2019</p>
+          <div className="IWillAW5">
+            <p>Untitled </p>
+            <p>(132 QR codes),</p>
+            <p> 2019</p>
+          </div>
           <p className="IWillAW5Text1">
             Finally, we decided to transform the file into a base64 string that
             was used widely to encode and decode files and transformed it into
