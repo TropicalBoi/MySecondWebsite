@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, StrictMode } from "react";
+import Loading from "../Loading/Laoding";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
 import ZingMain from "../ZingMain/ZingMain";
@@ -62,9 +63,9 @@ const App = () => {
             `}
           >
             {loading ? (
-              <div>
-                <h1 style={{ color: "white" }}> Loading </h1>
-              </div>
+              <StrictMode>
+                <Loading />
+              </StrictMode>
             ) : (
               <>
                 <Landing />
