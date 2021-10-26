@@ -9,9 +9,26 @@
 }
 
 .IWillContent {
-  width: 100vw;
+  width: auto;
   height: 100vh;
-  scrollbar-width: none;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #5582B8 #B9C0BE;
+}
+
+.IWillContent::-webkit-scrollbar {
+  height: 12px;
+}
+
+.IWillContent::-webkit-scrollbar-track {
+  background-color: #B9C0BE;
+}
+
+.IWillContent::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #5582B8;
+  border: 2px solid #B9C0BE;
 }
 
 .BackArrowIWill {

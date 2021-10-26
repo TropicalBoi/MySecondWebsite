@@ -11,9 +11,33 @@
 }
 
 .ZingContent {
-  width: 100vw;
+  width: auto;
   height: 100vh;
-  scrollbar-width: none;
+  overflow: unset;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #EFFF31 #7A2ADF;
+}
+
+.ZingContent::-webkit-scrollbar {
+  height: 12px;
+}
+
+.ZingContent::-webkit-scrollbar-track {
+  background-color: #7A2ADF;
+}
+
+.ZingContent::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #EFFF31;
+  border: 2px solid #7A2ADF;
+}
+
+.ZingScroll {
+  display: flex;
+  flex-direction: row;
+  width: 800vw;
 }
 
 .BackArrowZing {
@@ -89,6 +113,7 @@ p {
 .Zing1 {
   width: 100vw;
   height: 100vh;
+  position: relative;
   background-color: #35E13C;
 }
 

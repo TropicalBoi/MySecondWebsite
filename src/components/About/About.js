@@ -2,12 +2,35 @@ import React, { useState } from "react";
 import logo from "../Landing/logo.svg";
 import profilePic from "./ProfilePic.png";
 import Aboutvideo from "./WebTewAboutLanding.mp4";
-import { css, injectGlobal } from "@emotion/css";
+import { css, injectGlobal, keyframes } from "@emotion/css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+`;
+
+const textShadow = keyframes`
+  0% {
+    text-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
+  25% {
+    text-shadow: #fc0 1px 0 10px;
+    color: #c4c4c4;
+  }
+  50% {
+    text-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
+  75% {
+    text-shadow: #fc0 1px 0 10px;
+    color: #c4c4c4;
+  }
+  100% {
+    text-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
 `;
 
 const About = () => {
@@ -21,14 +44,27 @@ const About = () => {
       className={css`
         display: flex;
         flex-flow: column nowrap;
-        scrollbar-width: none;
         overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #c4c4c4 #000;
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #000;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 100px;
+          background: #c4c4c4;
+          border: 2px solid #000;
+        }
       `}
     >
       <div
         className={css`
           width: 100vw;
-          min-height: 100vh;
+          height: 100vh;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
@@ -36,7 +72,6 @@ const About = () => {
           font-size: calc(10px + 2vmin);
           color: white;
           position: relative;
-          width: 100%;
           overflow: hidden;
         `}
       >
@@ -125,14 +160,18 @@ const About = () => {
           />
         </div>
       </div>
-      <div>
+      <div
+        className={css`
+          position: relative;
+        `}
+      >
         <p
           className={css`
             position: absolute;
             width: auto;
             height: 6.9vh;
             left: 8.4vw;
-            top: 114.1vh;
+            top: 14.1vh;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
@@ -149,7 +188,7 @@ const About = () => {
             width: auto;
             height: 8.7vh;
             left: 9.3vw;
-            top: 122.4vh;
+            top: 22.4vh;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -168,11 +207,19 @@ const About = () => {
               onClick={() => setShowLaborText(!showLaborText)}
               className={css`
                 &:hover {
-                  text-shadow: #fc0 1px 0 10px;
+                  cursor: help;
                 }
               `}
             >
-              {!showLaborText && <p>manual labor</p>}
+              {!showLaborText && (
+                <p
+                  className={css`
+                    animation: ${textShadow} infinite 5s linear;
+                  `}
+                >
+                  manual labor
+                </p>
+              )}
               {showLaborText && (
                 <p>
                   carpenter, art handler, delivery rider, cinematographer asst.
@@ -189,8 +236,9 @@ const About = () => {
             <span
               onClick={() => setShowCogText(!showCogText)}
               className={css`
+                animation: ${textShadow} infinite 5s linear;
                 &:hover {
-                  text-shadow: #fc0 1px 0 10px;
+                  cursor: help;
                 }
               `}
             >
@@ -206,7 +254,7 @@ const About = () => {
             width: 7.5vw;
             height: 3.9vh;
             left: 8.9vw;
-            top: 140.4vh;
+            top: 40.4vh;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -224,7 +272,7 @@ const About = () => {
               width: 8.1vw;
               height: 6.4vh;
               left: 1.5vw;
-              top: 164.7vh;
+              top: 64.7vh;
               font-family: Montserrat;
               font-style: normal;
               font-weight: normal;
@@ -248,7 +296,7 @@ const About = () => {
             width: auto;
             height: 2.7vh;
             left: 17.1vw;
-            top: 149.9vh;
+            top: 49.9vh;
             letter-spacing: normal;
             transition: letter-spacing 1s;
             ${showLongText && !showShortText
@@ -289,6 +337,7 @@ const About = () => {
                   line-height: 2.7vh;
                   text-indent: 5.2vw;
                   color: #ffffff;
+                  padding-bottom: 10vh;
                   &:hover {
                     letter-spacing: 0;
                   }
@@ -464,7 +513,7 @@ const About = () => {
             width: 25.7vw;
             height: 2.7vh;
             left: 8.9vw;
-            top: 156.2vh;
+            top: 56.2vh;
             letter-spacing: normal;
             transition: letter-spacing 1s;
             ${!showLongText && showShortText
@@ -566,7 +615,7 @@ const About = () => {
             width: 20.8vw;
             height: auto;
             left: 60.5vw;
-            top: 114vh;
+            top: 14vh;
           `}
           alt="ProfilePic"
         />
@@ -576,7 +625,7 @@ const About = () => {
             width: 10.8vw;
             height: 10.5vh;
             left: 48.9vw;
-            top: 174.7vh;
+            top: 74.7vh;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -595,7 +644,8 @@ const About = () => {
             width: 44.5vw;
             height: auto;
             left: 48.9vw;
-            top: 188.3vh;
+            top: 88.3vh;
+            padding-bottom: 10vh;
           `}
         >
           <div

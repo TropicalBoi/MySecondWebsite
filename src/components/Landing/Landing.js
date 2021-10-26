@@ -94,7 +94,7 @@ const Landing = () => {
             height: 100%;
             object-fit: cover;
           `}
-          alt="logo1"
+          alt="logoScale1"
         />
         <div
           className={css`
@@ -115,16 +115,17 @@ const Landing = () => {
               height: 100%;
               object-fit: cover;
             `}
-            alt="logo2"
+            alt="logoScale2"
           />
         </div>
+
         <img
           src={logo}
           className={css`
             height: 100vmin;
             width: 100%;
           `}
-          alt="logo3"
+          alt="TEWPRAI BUALOI"
         />
 
         <ReactPlayer

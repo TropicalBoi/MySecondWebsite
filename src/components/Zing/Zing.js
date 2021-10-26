@@ -1,6 +1,5 @@
 import React from "react";
 import "./Zing.css";
-import HorizontalScroll from "react-scroll-horizontal";
 import { HashLink } from "react-router-hash-link";
 import ReactPlayer from "react-player";
 import zingImages from "./ZingImages";
@@ -18,7 +17,7 @@ const Zing = () => {
           <span class="lineBZing"></span>
         </div>
       </HashLink>
-      <HorizontalScroll>
+      <div className="ZingScroll">
         <div className="Zing1">
           <img
             src={zingImages.zingLogo}
@@ -228,7 +227,7 @@ const Zing = () => {
             <p className="Zingmail">zingvdo@gmail.com</p>
           </div>
         </div>
-      </HorizontalScroll>
+      </div>
     </div>
   );
 };

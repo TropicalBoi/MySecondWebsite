@@ -1,5 +1,5 @@
 import React, { useState, useEffect, StrictMode } from "react";
-import Loading from "../Loading/Laoding";
+import Loading from "../Loading/Loading";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
 import ZingMain from "../ZingMain/ZingMain";
@@ -22,7 +22,7 @@ const App = () => {
 
   useEffect(() => {
     const loadFiveSeconds = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5000));
+      await new Promise((resolve) => setTimeout(resolve, 8000));
       setLoading(false);
     };
     loadFiveSeconds();
@@ -57,9 +57,22 @@ const App = () => {
               flex-flow: column nowrap;
               max-height: 100vh;
               width: auto;
-              scrollbar-width: none;
+              overflow-x: hidden;
               overflow-y: scroll;
               scroll-snap-type: y mandatory;
+              scrollbar-width: thin;
+              scrollbar-color: #c4c4c4 #000;
+              &::-webkit-scrollbar {
+                width: 12px;
+              }
+              &::-webkit-scrollbar-track {
+                background-color: #000;
+              }
+              &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                background: #c4c4c4;
+                border: 2px solid #000;
+              }
             `}
           >
             {loading ? (

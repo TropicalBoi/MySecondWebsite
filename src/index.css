@@ -1,8 +1,5 @@
 @-moz-document url-prefix() {
   html {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
     height: 100%;
   }
 }
@@ -15,14 +12,6 @@
 @font-face {
   font-family: 'terminal-grotesque';
   src: url("./components/font/terminal_grotesque/terminal-grotesque.ttf") format('truetype');
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 body {
