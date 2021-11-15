@@ -29,6 +29,10 @@
   text-shadow: #FFFFFF 1px 0 10px;
 }
 
+.Typewriter a :hover {
+  text-decoration: none;
+}
+
 .Torch1 {
   position: relative;
   height: 15vh;

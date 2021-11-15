@@ -120,8 +120,8 @@ const About = () => {
           <p
             className={css`
               position: absolute;
-              width: 9.1vw;
-              height: 6.5vh;
+              width: 175px;
+              height: 60px;
               right: 1.5vw;
               top: 92.2vh;
               font-family: Montserrat;

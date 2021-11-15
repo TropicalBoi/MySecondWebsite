@@ -16,6 +16,8 @@ import AsYouGrowOlderButNeverWiser from "../AsYouGrowOlderButNeverWiser/AsYouGro
 import IWillAlwaysThinkOfYouFondly from "../IWillAlwaysThinkOfYouFondly/IWillAlwaysThinkOfYouFondly";
 import AhShitHereWeGoAgain from "../AhShitHereWeGoAgain/AhShitHereWeGoAgain";
 import FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend from "../FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend";
+import DDL from "../DeepDungeon/DeepDungeonLobby/DDL";
+import RPS from "../DeepDungeon/RockPaperSS/RPS";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -48,6 +50,12 @@ const App = () => {
         </Route>
         <Route path="/FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend">
           <FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend />
+        </Route>
+        <Route path="/TropicalDeepDungeon">
+          <DDL />
+        </Route>
+        <Route path="/RPS">
+          <RPS />
         </Route>
 
         <Route path="/">
