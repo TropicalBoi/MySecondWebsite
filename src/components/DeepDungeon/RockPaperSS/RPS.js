@@ -17,6 +17,7 @@ const RPS = () => {
     setBotText(
       "This is a normal Rock, Paper, Scissors game. Pick one of your choice!"
     );
+    setCast(false);
     setIsPlayed(false);
     setReplay(false);
   };
@@ -203,6 +204,59 @@ const RPS = () => {
             <>
               <div
                 className={css`
+                  position: absolute;
+                  width: 14.5vw;
+                  height: 21.1vh;
+                  left: 77.6vw;
+                  top: 75.3vh;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                `}
+              >
+                {cast && (
+                  <>
+                    <p
+                      className={css`
+                        font-family: RuneScape Quill;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 4vh;
+                        line-height: 2vh;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #ffff00;
+                        text-shadow: #ffffff 1px 0 10px;
+                      `}
+                      onClick={() => setCast(!cast)}
+                    >
+                      ...or cast a secret spell to summon your divine weapon!
+                    </p>
+                    <input
+                      type="text"
+                      value={userInputValue}
+                      onChange={(e) => setInput(e.target.value)}
+                      placeholder="cast it here..."
+                    />
+                    <input type="submit" value="Cast!" />
+                  </>
+                )}
+                {!cast && (
+                  <img
+                    src={RPSImages.roach}
+                    className={css`
+                      width: auto;
+                      height: 20vh;
+                    `}
+                    alt="RoachMagician"
+                    onClick={() => setCast(!cast)}
+                  />
+                )}
+              </div>{" "}
+              <div
+                className={css`
                   width: 50vw;
                   height: 10vh;
                   display: flex;
@@ -269,59 +323,6 @@ const RPS = () => {
                   />
                 </button>
               </div>
-              <div
-                className={css`
-                  position: absolute;
-                  width: 14.5vw;
-                  height: 21.1vh;
-                  left: 77.6vw;
-                  top: 75.3vh;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-between;
-                  align-items: center;
-                `}
-              >
-                {cast && (
-                  <>
-                    <p
-                      className={css`
-                        font-family: RuneScape Quill;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 4vh;
-                        line-height: 2vh;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        color: #ffff00;
-                        text-shadow: #ffffff 1px 0 10px;
-                      `}
-                      onClick={() => setCast(!cast)}
-                    >
-                      ...or cast a secret spell to summon your divine weapon!
-                    </p>
-                    <input
-                      type="text"
-                      value={userInputValue}
-                      onChange={(e) => setInput(e.target.value)}
-                      placeholder="cast it here..."
-                    />
-                    <input type="submit" value="Cast!" />
-                  </>
-                )}
-                {!cast && (
-                  <img
-                    src={RPSImages.roach}
-                    className={css`
-                      width: auto;
-                      height: 20vh;
-                    `}
-                    alt="RoachMagician"
-                    onClick={() => setCast(!cast)}
-                  />
-                )}
-              </div>{" "}
             </>
           )}
           {replay && (

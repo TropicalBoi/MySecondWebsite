@@ -126,6 +126,7 @@ const DDL = () => {
               background: #000;
               border-radius: 20px;
               align-items: center;
+              padding-top: 5vw;
             `}
           >
             <p
@@ -165,38 +166,36 @@ const DDL = () => {
               Welcome to the Deep Dungeon!
             </p>
           </div>
-          <Link to="/RPS">
-            <div
+          <Link
+            to="/RPS"
+            className={css`
+              padding: 50px;
+              width: 500px;
+              height: 500px;
+              margin: 50px;
+              background: #000;
+              animation: ${boxShadow} infinite 5s linear;
+              border-radius: 20px;
+              display: flex;
+              justify-content: center;
+            `}
+          >
+            <p
               className={css`
-                padding: 50px;
-                width: 500px;
-                height: 500px;
-                margin: 50px;
-                background: #000;
-                animation: ${boxShadow} infinite 5s linear;
-                border-radius: 20px;
+                font-family: RuneScape Quill;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5.4vh;
+                line-height: 5.5vh;
                 display: flex;
-                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #ffff00;
+                text-shadow: #ffffff 1px 0 10px;
               `}
             >
-              <p
-                className={css`
-                  width: 10vw;
-                  font-family: RuneScape Quill;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 5.4vh;
-                  line-height: 5.5vh;
-                  display: flex;
-                  align-items: center;
-                  text-align: center;
-                  color: #ffff00;
-                  text-shadow: #ffffff 1px 0 10px;
-                `}
-              >
-                ROCK PAPER SCISSORS
-              </p>
-            </div>
+              ROCK PAPER SCISSORS
+            </p>
           </Link>
           <div
             className={css`
