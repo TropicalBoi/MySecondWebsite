@@ -105,9 +105,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-shadow: #Fc0 1px 0 10px;
+}
+
 .IWillContent1 a:hover {
   text-decoration: wavy underline;
-  text-shadow: #Fc0 1px 0 10px;
 }
 
 .IWillContent1 {
