@@ -155,7 +155,7 @@ const About = () => {
             loop={true}
             muted={true}
             url={Aboutvideo}
-            width="100vw"
+            width="auto"
             height="auto"
           />
         </div>
