@@ -81,8 +81,8 @@ const Landing = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 100%;
-          width: 100%;
+          height: 100vh;
+          width: 100vw;
         `}
       >
         <img
@@ -140,7 +140,7 @@ const Landing = () => {
           loop={true}
           muted={true}
           url={landingvideo}
-          width="100vw"
+          width="auto"
           height="auto"
         />
       </div>
