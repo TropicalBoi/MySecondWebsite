@@ -139,7 +139,7 @@ const About = () => {
               color: #ffffff;
               @media screen and (max-width: 428px) {
                 font-size: 4vw;
-                margin-right: 3vw;
+                right: 3vw;
               }
             `}
           >
