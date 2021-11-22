@@ -128,7 +128,7 @@ const About = () => {
               position: absolute;
               width: 175px;
               height: 60px;
-              margin-right: 1vw;
+              right: 1vw;
               top: 92.2vh;
               font-family: Montserrat;
               font-style: normal;

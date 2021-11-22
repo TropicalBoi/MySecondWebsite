@@ -65,7 +65,7 @@ const Landing = () => {
           font-family: Montserrat;
           position: absolute;
           margin-top: 2.1vh;
-          margin-right: 1.5vw;
+          margin-right: 1vw;
           color: #ffffff;
           z-index: 999;
           &:hover {
