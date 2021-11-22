@@ -86,9 +86,6 @@ const About = () => {
             &:hover {
               text-decoration: none;
             }
-            @media screen and (max-width: 428px) {
-              margin-right: 3vw;
-            }
           `}
           to="/"
         >
@@ -139,7 +136,7 @@ const About = () => {
               color: #ffffff;
               @media screen and (max-width: 428px) {
                 font-size: 4vw;
-                right: 3vw;
+                right: 1vw;
               }
             `}
           >

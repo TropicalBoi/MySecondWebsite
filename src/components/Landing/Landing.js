@@ -71,9 +71,6 @@ const Landing = () => {
           &:hover {
             text-decoration: none;
           }
-          @media screen and (max-width: 428px) {
-            margin-right: 3vw;
-          }
         `}
         to="/About"
       >
