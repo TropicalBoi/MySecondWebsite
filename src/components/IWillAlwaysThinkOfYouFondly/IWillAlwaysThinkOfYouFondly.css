@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
 @font-face {
   font-family: 'Athelas Regular';
   font-style: normal;
@@ -13,19 +14,28 @@
   height: 100vh;
   overflow-y: hidden;
   overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.IWillContent::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}
+
+.IWillHScroll {
   scrollbar-width: thin;
   scrollbar-color: #5582B8 #B9C0BE;
 }
 
-.IWillContent::-webkit-scrollbar {
+.IWillHScroll::-webkit-scrollbar {
   height: 12px;
 }
 
-.IWillContent::-webkit-scrollbar-track {
+.IWillHScroll::-webkit-scrollbar-track {
   background-color: #B9C0BE;
 }
 
-.IWillContent::-webkit-scrollbar-thumb {
+.IWillHScroll::-webkit-scrollbar-thumb {
   border-radius: 100px;
   background: #5582B8;
   border: 2px solid #B9C0BE;
@@ -92,6 +102,7 @@
   0% {
     transform: scaleX(100%);
   }
+
   100% {
     transform: scaleX(140%);
   }
@@ -332,6 +343,7 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   100% {
     display: none;
     visibility: hidden;
@@ -342,6 +354,7 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;
@@ -353,6 +366,7 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;
@@ -364,6 +378,7 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;
@@ -375,6 +390,7 @@ a:hover {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;

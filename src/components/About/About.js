@@ -80,7 +80,7 @@ const About = () => {
             font-family: Montserrat;
             position: absolute;
             margin-top: 2.1vh;
-            margin-right: 1.5vw;
+            margin-right: 3vw;
             color: #ffffff;
             z-index: 999;
             &:hover {
@@ -113,6 +113,9 @@ const About = () => {
               font-size: 2.6vh;
               line-height: 3.1vh;
               color: #ffffff;
+              @media screen and (max-width: 428px) {
+                font-size: 4vw;
+              }
             `}
           >
             tewprai.bualoi@gmail.com
@@ -122,7 +125,7 @@ const About = () => {
               position: absolute;
               width: 175px;
               height: 60px;
-              right: 1.5vw;
+              right: 3vw;
               top: 92.2vh;
               font-family: Montserrat;
               font-style: normal;
@@ -131,6 +134,9 @@ const About = () => {
               line-height: 3.1vh;
               text-align: right;
               color: #ffffff;
+              @media screen and (max-width: 428px) {
+                font-size: 4vw;
+              }
             `}
           >
             for quick chat @t.ropicalboi
@@ -157,6 +163,7 @@ const About = () => {
             url={Aboutvideo}
             width="auto"
             height="auto"
+            playsinline="true"
           />
         </div>
       </div>
@@ -557,8 +564,9 @@ const About = () => {
               `}
             >
               Tewprai's main interests are circulated from non-conventional
-              moving images, various types of screens to new-media culture with
-              its effects on humans.
+              moving images, various types of screens to new-media culture on
+              this on-going age of internet revolution with its effects on
+              humans.
             </p>
           )}
           {!showLongText && !showShortText && (

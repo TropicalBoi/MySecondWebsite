@@ -64,8 +64,8 @@ const Landing = () => {
         className={css`
           font-family: Montserrat;
           position: absolute;
-          height: fit-content;
-          margin: 20px 30px 0 0;
+          margin-top: 2.1vh;
+          margin-right: 3vw;
           color: #ffffff;
           z-index: 999;
           &:hover {
@@ -142,6 +142,7 @@ const Landing = () => {
           url={landingvideo}
           width="auto"
           height="auto"
+          playsinline="true"
         />
       </div>
     </div>

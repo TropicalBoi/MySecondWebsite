@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .AsYouContent {
   width: auto;
   height: 100vh;
   overflow: unset;
   overflow-y: hidden;
   overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.AsYouContent::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}
+
+
+.AsYouHScroll {
   scrollbar-width: thin;
   scrollbar-color: #fff #F32D2D;
 }
 
-.AsYouContent::-webkit-scrollbar {
+.AsYouHScroll::-webkit-scrollbar {
   height: 12px;
 }
 
-.AsYouContent::-webkit-scrollbar-track {
+.AsYouHScroll::-webkit-scrollbar-track {
   background-color: #F32D2D;
 }
 
-.AsYouContent::-webkit-scrollbar-thumb {
+.AsYouHScroll::-webkit-scrollbar-thumb {
   border-radius: 100px;
   background: #fff;
   border: 2px solid #F32D2D;
 }
+
+
 
 .BackArrowAsYou {
   width: auto;
@@ -85,6 +98,7 @@
   0% {
     transform: scaleX(100%);
   }
+
   100% {
     transform: scaleX(140%);
   }
