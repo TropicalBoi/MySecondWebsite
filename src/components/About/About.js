@@ -80,11 +80,14 @@ const About = () => {
             font-family: Montserrat;
             position: absolute;
             margin-top: 2.1vh;
-            margin-right: 3vw;
+            margin-right: 1.5vw;
             color: #ffffff;
             z-index: 999;
             &:hover {
               text-decoration: none;
+            }
+            @media screen and (max-width: 428px) {
+              margin-right: 3vw;
             }
           `}
           to="/"
