@@ -80,7 +80,7 @@ const About = () => {
             font-family: Montserrat;
             position: absolute;
             margin-top: 2.1vh;
-            margin-right: 1.5vw;
+            margin-right: 1vw;
             color: #ffffff;
             z-index: 999;
             &:hover {
@@ -128,7 +128,7 @@ const About = () => {
               position: absolute;
               width: 175px;
               height: 60px;
-              right: 3vw;
+              margin-right: 1vw;
               top: 92.2vh;
               font-family: Montserrat;
               font-style: normal;
@@ -139,6 +139,7 @@ const About = () => {
               color: #ffffff;
               @media screen and (max-width: 428px) {
                 font-size: 4vw;
+                margin-right: 3vw;
               }
             `}
           >
