@@ -46,3 +46,32 @@
   height: 15vh;
   width: auto;
 }
+
+@media screen and (max-width: 428px) {
+
+  .DDE {
+    justify-content: left;
+  }
+
+  .Typewriter {
+    font-family: RuneScape Quill;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vh;
+    line-height: 2.5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFF00;
+    text-shadow: #FFFFFF 1px 0 10px;
+    margin-left: 8vw;
+    width: 30vw;
+  }
+
+  .Torch2 {
+    position: absolute;
+    height: 15vh;
+    width: auto;
+    right: 0;
+  }
+}

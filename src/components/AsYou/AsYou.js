@@ -1,6 +1,7 @@
 import React from "react";
 import AsYouCov from "./AsYouCoverImg.jpg";
 import AsYouFont from "./AsYouFont.png";
+import AsYouFontMobile from "./AsYouFontMobile.png";
 import "./AsYou.css";
 import { Link } from "react-router-dom";
 
@@ -19,6 +20,11 @@ const AsYou = () => {
       <img
         src={AsYouCov}
         className="CoverImg2"
+        alt="As you grow older but never wiser."
+      />
+      <img
+        src={AsYouFontMobile}
+        className="AsYouFontMobile"
         alt="As you grow older but never wiser."
       />
       <Link to="/AsYouGrowOlderButNeverWiser">

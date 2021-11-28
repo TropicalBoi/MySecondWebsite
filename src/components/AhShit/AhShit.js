@@ -1,6 +1,7 @@
 import React from "react";
 import AhShitGif from "./AhShitGif.gif";
 import AhShitFont from "./AhShitFont.png";
+import AhShitFontMobile from "./AhShitFontMobile.png";
 import "./AhShit.css";
 import { Link } from "react-router-dom";
 
@@ -10,6 +11,11 @@ const AhShit = () => {
       <img
         src={AhShitFont}
         className="AhShitFont"
+        alt="Ah shit, here we go again."
+      />
+      <img
+        src={AhShitFontMobile}
+        className="AhShitFontMobile"
         alt="Ah shit, here we go again."
       />
       <p className="Year4">(2019)</p>
