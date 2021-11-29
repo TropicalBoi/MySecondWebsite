@@ -1,4 +1,4 @@
-import React, { useState, useEffect, StrictMode } from "react";
+import React, { useState, useEffect, StrictMode, useRef } from "react";
 import Loading from "../Loading/Loading";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
