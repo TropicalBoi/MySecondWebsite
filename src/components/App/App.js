@@ -1,4 +1,4 @@
-import React, { useState, useEffect, StrictMode, useRef } from "react";
+import React, { useState, useEffect, StrictMode } from "react";
 import Loading from "../Loading/Loading";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
@@ -28,11 +28,6 @@ const App = () => {
       setLoading(false);
     };
     loadFiveSeconds();
-  });
-
-  const scrollInto = useRef(null);
-  useEffect(() => {
-    scrollInto.current.scrollIntoView();
   });
 
   return (
@@ -88,6 +83,8 @@ const App = () => {
               }
             `}
           >
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="mobile-web-app-capable" content="yes" />
             {loading ? (
               <StrictMode>
                 <Loading />
@@ -96,12 +93,12 @@ const App = () => {
               <>
                 <Landing />
                 <Marquee />
-                <ZingMain ref={scrollInto} />
-                <AsYou ref={scrollInto} />
-                <IWill ref={scrollInto} />
-                <AhShit ref={scrollInto} />
-                <FriendShip ref={scrollInto} />
-                <DDE ref={scrollInto} />
+                <ZingMain />
+                <AsYou />
+                <IWill />
+                <AhShit />
+                <FriendShip />
+                <DDE />
               </>
             )}
           </div>
