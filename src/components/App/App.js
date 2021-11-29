@@ -63,7 +63,7 @@ const App = () => {
             className={css`
               display: flex;
               flex-flow: column nowrap;
-              max-height: 100vh;
+              height: 100vh;
               width: auto;
               overflow-x: hidden;
               overflow-y: scroll;
