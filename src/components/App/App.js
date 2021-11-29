@@ -1,4 +1,4 @@
-import React, { useState, useEffect, StrictMode } from "react";
+import React, { useState, useEffect, StrictMode, useRef } from "react";
 import Loading from "../Loading/Loading";
 import Landing from "../Landing/Landing";
 import Marquee from "../Marquee/Marquee";
@@ -22,12 +22,15 @@ import RPS from "../DeepDungeon/RockPaperSS/RPS";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
+  const scrollInto = useRef(null);
+
   useEffect(() => {
     const loadFiveSeconds = async () => {
       await new Promise((resolve) => setTimeout(resolve, 8000));
       setLoading(false);
     };
     loadFiveSeconds();
+    scrollInto.current.scrollIntoView();
   });
 
   return (
@@ -60,6 +63,7 @@ const App = () => {
 
         <Route path="/">
           <div
+            ref={scrollInto}
             className={css`
               display: flex;
               flex-flow: column nowrap;
@@ -83,8 +87,6 @@ const App = () => {
               }
             `}
           >
-            <meta name="apple-mobile-web-app-capable" content="yes" />
-            <meta name="mobile-web-app-capable" content="yes" />
             {loading ? (
               <StrictMode>
                 <Loading />
