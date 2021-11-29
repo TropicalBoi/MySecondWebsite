@@ -30,6 +30,11 @@ const App = () => {
     loadFiveSeconds();
   });
 
+  const scrollInto = useRef(null);
+  useEffect(() => {
+    scrollInto.current.scrollIntoView();
+  });
+
   return (
     <Router>
       <Switch>
@@ -91,12 +96,12 @@ const App = () => {
               <>
                 <Landing />
                 <Marquee />
-                <ZingMain />
-                <AsYou />
-                <IWill />
-                <AhShit />
-                <FriendShip />
-                <DDE />
+                <ZingMain ref={scrollInto} />
+                <AsYou ref={scrollInto} />
+                <IWill ref={scrollInto} />
+                <AhShit ref={scrollInto} />
+                <FriendShip ref={scrollInto} />
+                <DDE ref={scrollInto} />
               </>
             )}
           </div>
