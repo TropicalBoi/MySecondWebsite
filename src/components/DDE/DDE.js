@@ -15,7 +15,7 @@ const DDE = () => {
               "You’ve reached the Bottom!",
               "Next would be the Deep Dungeon.",
               "Enter with caution!",
-              "==>>[!]<<==",
+              "=>>[!]<<=",
             ],
             autoStart: true,
             loop: true,

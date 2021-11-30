@@ -63,11 +63,11 @@ const App = () => {
             className={css`
               display: flex;
               flex-flow: column nowrap;
-              height: auto;
+              height: 100vh;
               width: auto;
               overflow-x: hidden;
               overflow-y: scroll;
-
+              scroll-snap-type: y mandatory;
               scrollbar-width: thin;
               scrollbar-color: #c4c4c4 #000;
               &::-webkit-scrollbar {
@@ -80,6 +80,9 @@ const App = () => {
                 border-radius: 100px;
                 background: #c4c4c4;
                 border: 2px solid #000;
+              }
+              @media screen and (max-width: 428px) {
+                height: auto;
               }
             `}
           >
