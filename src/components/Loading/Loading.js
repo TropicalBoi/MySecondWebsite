@@ -54,6 +54,7 @@ const Loading = () => {
         display: flex;
         justify-content: center;
         background-color: #000;
+        overflow: hidden;
       `}
     >
       <div
