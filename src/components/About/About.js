@@ -846,7 +846,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -900,7 +900,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -966,7 +966,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -1020,7 +1020,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -1069,7 +1069,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -1118,7 +1118,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >
@@ -1171,7 +1171,7 @@ const About = () => {
                       width: 70vw;
                       font-size: 4vw;
                       line-height: 5vw;
-                      margin: 1vh 0;
+                      margin: 0 0 2vh 0;
                     }
                   `}
                 >

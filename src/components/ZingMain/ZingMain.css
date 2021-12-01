@@ -136,7 +136,7 @@
     width: 63vw;
     height: auto;
     left: 16.6vw;
-    top: 17.6vh;
+    top: 12vh;
   }
 
   .FishTankMain {
@@ -144,7 +144,7 @@
     width: 73.6vw;
     height: auto;
     left: 16.6vw;
-    top: 32vh;
+    top: 27vh;
   }
 
   .Text1 {
@@ -152,7 +152,7 @@
     width: 165px;
     height: 60px;
     left: 48.4vw;
-    top: 61.4vh;
+    top: 64vh;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
