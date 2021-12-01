@@ -827,7 +827,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -882,7 +882,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -948,7 +948,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -1002,7 +1002,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -1051,7 +1051,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -1100,7 +1100,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
@@ -1153,7 +1153,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
-                      margint: 5vh 0;
+                      margin: 0.5vh 0;
                     }
                   `}
                 >
