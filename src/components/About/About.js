@@ -356,7 +356,7 @@ const About = () => {
               About
             </p>
             {showLongText && !showShortText && (
-              <p
+              <a
                 className={css`
                   position: absolute;
                   width: 8.1vw;
@@ -380,10 +380,11 @@ const About = () => {
                     line-height: 1.5vh;
                   }
                 `}
+                href="https://www.utwente.nl/en/bms/wijsb/research/Human-Technology%20Relations/"
               >
                 <sup>(1)</sup> Accessed from
                 https://www.utwente.nl/en/bms/wijsb/research/Human-Technology%20Relations/
-              </p>
+              </a>
             )}
             <div
               onClick={() => setShowLongText(!showLongText)}

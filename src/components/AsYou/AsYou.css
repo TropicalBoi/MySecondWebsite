@@ -163,20 +163,20 @@
 
   .AsYouFontMobile {
     position: absolute;
-    width: 52.7vw;
+    width: 48vw;
     height: auto;
     left: 16.6vw;
-    top: 7.6vh;
+    top: 6.5vh;
     display: unset;
     visibility: unset;
   }
 
   .CoverImg2 {
     position: absolute;
-    width: 64.4vw;
+    width: 60vw;
     height: auto;
     left: 16.6vw;
-    top: 28.9vh;
+    top: 26vh;
   }
 
   .Text2 {
@@ -184,7 +184,7 @@
     width: 152px;
     height: 53px;
     left: 16.6vw;
-    top: 77.6vh;
+    top: 80vh;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;

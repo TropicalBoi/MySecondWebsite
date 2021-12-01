@@ -153,7 +153,7 @@
 
   .IWillLogo {
     position: absolute;
-    width: 33.8vw;
+    width: 30vw;
     height: auto;
     left: 16.6vw;
     top: 7.6vh;
@@ -161,7 +161,7 @@
 
   .CoverImg3 {
     position: absolute;
-    width: 75.2vw;
+    width: 72vw;
     height: auto;
     left: 15.2vw;
     top: 40vh;
@@ -172,7 +172,7 @@
     width: 130px;
     height: 59px;
     left: 16.6vw;
-    top: 80vh;
+    top: 82vh;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
