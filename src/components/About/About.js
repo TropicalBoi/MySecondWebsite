@@ -59,6 +59,9 @@ const About = () => {
           background: #c4c4c4;
           border: 2px solid #000;
         }
+        @media screen and (max-width: 428px) {
+          overflow: hidden;
+        }
       `}
     >
       <div
@@ -104,7 +107,7 @@ const About = () => {
             className={css`
               position: absolute;
               width: 17.9vw;
-              height: 2.7vh;
+              height: fit-content;
               left: 1vw;
               top: 95.2vh;
               font-family: Montserrat;
@@ -114,7 +117,11 @@ const About = () => {
               line-height: 3.1vh;
               color: #ffffff;
               @media screen and (max-width: 428px) {
-                font-size: 4vw;
+                font-size: 3vw;
+                top: unset;
+                bottom: 0;
+                left: 4vw;
+            }
               }
             `}
           >
@@ -124,19 +131,22 @@ const About = () => {
             className={css`
               position: absolute;
               width: 175px;
-              height: 60px;
+              height: fit-content;
               right: 1vw;
               top: 92.2vh;
               font-family: Montserrat;
               font-style: normal;
               font-weight: normal;
               font-size: 2.6vh;
-              line-height: 3.1vh;
+              line-height: 3.5vw;
               text-align: right;
               color: #ffffff;
               @media screen and (max-width: 428px) {
-                font-size: 4vw;
-                right: 1vw;
+                font-size: 3vw;
+                right: 4vw;
+                bottom: 1vh;
+                top: unset;
+                width: 30vw;
               }
             `}
           >
@@ -443,7 +453,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       position: relative;
                       left: -5vw;
-                      top: -15vw;
+                      top: -10vw;
                       width: 80vw;
                       font-size: 4vw;
                       line-height: 4.5vw;
@@ -817,6 +827,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -871,6 +882,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -936,6 +948,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -989,6 +1002,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -1037,6 +1051,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -1085,6 +1100,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
@@ -1137,6 +1153,7 @@ const About = () => {
                     @media screen and (max-width: 428px) {
                       font-size: 10vw;
                       line-height: inherit;
+                      margint: 5vh 0;
                     }
                   `}
                 >
