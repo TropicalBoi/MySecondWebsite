@@ -306,7 +306,7 @@ p {
 
   .AsYouFont1 {
     position: absolute;
-    width: 45.3vw;
+    width: 40vw;
     height: auto;
     left: 15.6vw;
     top: 13.3vh;
@@ -391,10 +391,10 @@ p {
 
   .AsYouPic1 {
     position: absolute;
-    width: 64.1vw;
+    width: 60vw;
     height: auto;
     left: 15.6vw;
-    top: 49.6vh;
+    top: 50vh;
   }
 
   .AsYouPic2 {
