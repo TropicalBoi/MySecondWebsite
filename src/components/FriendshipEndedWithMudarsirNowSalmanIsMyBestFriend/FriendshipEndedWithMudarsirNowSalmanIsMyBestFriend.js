@@ -68,7 +68,7 @@ const FriendshipEndedWithMudarsirNowSalmanIsMyBestFriend = () => {
             alt="Friendship ended with Mudasir now Salman is my best friend."
           />
           <div className="friendshipText2">
-            /* Video single screen on a Smartphone, 4.45 mins */
+            Video single screen on a Smartphone, 4.45 mins
           </div>
           <iframe
             src="https://player.vimeo.com/video/380416595?h=a1080a4bc9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
