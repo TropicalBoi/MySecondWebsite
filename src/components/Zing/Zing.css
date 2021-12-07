@@ -436,8 +436,8 @@ p {
   top: 56vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.5vh;
+  font-weight: normal;
+  font-size: 2vh;
   line-height: 2.5vh;
   text-align: justify;
   text-indent: 5.2vw;
@@ -452,8 +452,8 @@ p {
   top: 20vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.5vh;
+  font-weight: normal;
+  font-size: 2vh;
   line-height: 2.5vh;
   text-align: justify;
   text-indent: 2.6vw;
@@ -533,9 +533,9 @@ p {
   top: 37vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.3vh;
-  line-height: 2.8vh;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 2.5vh;
   display: flex;
   align-items: center;
   text-align: justify;
@@ -552,10 +552,9 @@ p {
   top: 69.3vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.3vh;
-  line-height: 2.8vh;
-  ;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 2.5vh;
   text-align: justify;
   text-indent: 3.6vw;
   color: #FFCD1D;
@@ -569,9 +568,9 @@ p {
   top: 13vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
-  font-size: 2.3vh;
-  line-height: 2.8vh;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 2.5vh;
   text-align: justify;
   letter-spacing: -0.02em;
   text-indent: 2.6vw;
@@ -720,12 +719,12 @@ p {
   width: 19vw;
   height: 3vh;
   left: 234vw;
-  top: 38.3vh;
+  top: 40vh;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.5vh;
-  line-height: 3vh;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 2.5vh;
   text-align: justify;
   letter-spacing: -0.03em;
   color: #1C4CF6;
@@ -811,7 +810,7 @@ p {
 
 .LZcolor1 {
   position: absolute;
-  width: 67.4vw;
+  width: 100%;
   height: 100%;
   mix-blend-mode: color;
   border-radius: 25px;
@@ -820,7 +819,7 @@ p {
 
 .LZcolor2 {
   position: absolute;
-  width: 67.4vw;
+  width: 100%;
   height: 100%;
   mix-blend-mode: normal;
   border-radius: 25px;
@@ -858,29 +857,23 @@ p {
   height: 3.2vh;
   display: flex;
   justify-content: center;
-  z-index: 20;
-}
-
-.Contact {
-  position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 2.5vh;
   line-height: 3vh;
   text-align: right;
+  z-index: 20;
+}
+
+.Contact {
+  position: relative;
   color: #E5E5E5;
   margin: 0 3px 0 0;
 }
 
 .Zingmail {
   position: relative;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.5vh;
-  line-height: 3vh;
-  text-align: right;
   text-decoration: wavy underline;
   color: #EFFF31;
   margin: 0 0 0 3px;
@@ -956,6 +949,267 @@ p {
     background-size: 300vw 100vh, 600vw 100vh;
   }
 
+  .TankTube {
+    position: absolute;
+    width: 8.9vw;
+    height: auto;
+    left: 7.6vw;
+    top: 11.9vh;
+  }
+
+  .FishTankOpencall {
+    position: absolute;
+    width: 116.1vw;
+    height: auto;
+    left: 21vw;
+    top: 12.6vh;
+  }
+
+  .FishTankFont {
+    position: absolute;
+    width: 75.8vw;
+    height: auto;
+    left: 150vw;
+    top: 35vh;
+  }
+
+  .FishTankText1 {
+    position: absolute;
+    width: 73vw;
+    height: auto;
+    left: 150vw;
+    top: 63vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .FishTankText2 {
+    position: absolute;
+    width: 62vw;
+    height: 21.3vh;
+    left: 490.2vw;
+    top: 19.7vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .FishGang {
+    position: absolute;
+    width: 51.2vw;
+    height: auto;
+    left: 275.8vw;
+    top: 57.4vh;
+  }
+
+  .BigTank {
+    display: none;
+    visibility: hidden;
+  }
+
+  .guppy1-1 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 234.1vw;
+    top: 85.6vh;
+  }
+
+  .guppy2-8 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 245.8vw;
+    top: 81.3vh;
+  }
+
+  .guppy3-7 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 245.8vw;
+    top: 89.4vh;
+  }
+
+  .guppy4-2 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 110.3vw;
+    top: 19.2vh;
+  }
+
+  .guppy5-4 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 535.6vw;
+    top: 78.6vh;
+  }
+
+  .guppy6-3 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 550.2vw;
+    top: 73.1vh;
+  }
+
+  .guppy7-5 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 690.5vw;
+    top: 89.2vh;
+  }
+
+  .guppy8-6 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 593vw;
+    top: 13.3vh;
+  }
+
+  .guppy9-4 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 721.2vw;
+    top: 14.8vh;
+  }
+
+  .guppy10-3 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 735.8vw;
+    top: 9.2vh;
+  }
+
+  .guppy11-8 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 472.3vw;
+    top: 13.1vh;
+  }
+
+  .guppy12-1 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 488.4vw;
+    top: 7.4vh;
+  }
+
+  .guppy13-7 {
+    position: absolute;
+    width: 6.9vw;
+    height: auto;
+    left: 818.4vw;
+    top: 44.4vh;
+  }
+
+  .weed1 {
+    position: absolute;
+    width: 13.3vw;
+    height: auto;
+    left: 838.4vw;
+  }
+
+  .weed2 {
+    position: absolute;
+    width: 16.4vw;
+    height: auto;
+    left: 858.2vw;
+    bottom: 6.6vh;
+  }
+
+  .TV {
+    position: absolute;
+    width: 48.2vw;
+    height: auto;
+    left: 845.1vw;
+    bottom: -4.6vh;
+  }
+
+  .bubble {
+    position: absolute;
+    width: 24.3vw;
+    height: auto;
+    left: 865.1vw;
+    bottom: 15.1vh;
+  }
+
+  .FishTankPic1 {
+    position: absolute;
+    width: 135.8vw;
+    height: auto;
+    left: 232vw;
+    top: 11.3vh;
+  }
+
+  .FishTankPic2 {
+    position: absolute;
+    width: 84.8vw;
+    height: auto;
+    left: 387.4vw;
+    top: 25.9vh;
+  }
+
+  .FishTankPic3 {
+    position: absolute;
+    width: 115.1vw;
+    height: auto;
+    left: 403.3vw;
+    top: 60.4vh;
+  }
+
+  .FishTankPic4 {
+    position: absolute;
+    width: 142vw;
+    height: auto;
+    left: 565.1vw;
+    top: 25vh;
+  }
+
+  .FishTankPic5 {
+    position: absolute;
+    width: 65.5vw;
+    height: auto;
+    left: 734.3vw;
+    top: 28vh;
+  }
+
+  .FishTankPic6 {
+    position: absolute;
+    width: 99.4vw;
+    height: auto;
+    left: 722.8vw;
+    top: 60.4vh;
+  }
+
+  .FishTankPic7 {
+    position: absolute;
+    width: 72.8vw;
+    height: auto;
+    left: 818.4vw;
+    top: 11.3vh;
+  }
+
+  .FishTankPic8 {
+    position: absolute;
+    width: 54.1vw;
+    height: auto;
+    left: 837.9vw;
+    top: 45.8vh;
+  }
+
+  .FishTankEnd {
+    display: none;
+    visibility: hidden;
+  }
+
   .ZZTV {
     width: 900vw;
     height: 100vh;
@@ -969,7 +1223,225 @@ p {
     background-size: auto 100%;
   }
 
+  .ZZTVFont {
+    position: absolute;
+    width: 84.3vw;
+    height: auto;
+    left: 13vw;
+    top: 12.6vh;
+  }
+
+  .evaCongrats {
+    position: absolute;
+    width: 86.4vw;
+    height: auto;
+    left: 25.8vw;
+    top: 57.4vh;
+  }
+
+  .cctv {
+    position: absolute;
+    width: 38.4vw;
+    height: auto;
+    left: 126.6vw;
+    top: 12.6vh;
+  }
+
+  .ZZTVtext1 {
+    position: absolute;
+    width: 87.5vw;
+    height: 14.2vh;
+    left: 105vw;
+    top: 39.4vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .ZZTVtext2 {
+    position: absolute;
+    width: 63.8vw;
+    height: 13.9vh;
+    left: 162vw;
+    top: 64.2vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .ZZTVtext3 {
+    position: absolute;
+    width: 58.4vw;
+    height: 20.6vh;
+    left: 367.6vw;
+    top: 12.9vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+
+  }
+
+  .ZZTVpic1 {
+    position: absolute;
+    width: 145.8vw;
+    height: auto;
+    left: 200.7vw;
+    top: 13.3vh;
+  }
+
+  .ZZTVpic2 {
+    position: absolute;
+    width: 92.3vw;
+    height: auto;
+    left: 273.5vw;
+    top: 59.7vh;
+  }
+
+  .ZZTVpic3 {
+    position: absolute;
+    width: 83.8vw;
+    height: auto;
+    left: 774.6vw;
+    top: 14.5vh;
+  }
+
+  .Gopro {
+    position: absolute;
+    width: 42.8vw;
+    height: auto;
+    left: 374vw;
+    top: 54vh;
+  }
+
+  .Iphone {
+    position: absolute;
+    width: 51.8vw;
+    height: auto;
+    left: 442vw;
+    top: 9vh;
+  }
+
+  .Laptop {
+    position: absolute;
+    width: 54.2vw;
+    height: auto;
+    left: 515vw;
+    top: 7vh;
+    transform: rotate(22.55deg);
+  }
+
+  .S1 {
+    position: absolute;
+    width: 8vw;
+    height: 3.8vh;
+    left: 415vw;
+    top: 52vh;
+    font-size: 3vh;
+    line-height: 4.1vh;
+    border-radius: 5vw;
+  }
+
+  .S2 {
+    position: absolute;
+    width: 8vw;
+    height: 3.8vh;
+    left: 445vw;
+    top: 17vh;
+    font-size: 3vh;
+    line-height: 4.1vh;
+    border-radius: 5vw;
+  }
+
+  .S3 {
+    position: absolute;
+    width: 8vw;
+    height: 3.8vh;
+    left: 512vw;
+    top: 20vh;
+    font-size: 3vh;
+    line-height: 4.1vh;
+    border-radius: 5vw;
+  }
+
+  .S4 {
+    position: absolute;
+    width: 8vw;
+    height: 3.8vh;
+    left: 560vw;
+    top: 62vh;
+    font-size: 3vh;
+    line-height: 4.1vh;
+    border-radius: 5vw;
+  }
+
+  .Steps {
+    position: absolute;
+    width: 92vw;
+    height: auto;
+    left: 439.7vw;
+    top: 43vh;
+  }
+
+  .ZZZTVR31 {
+    position: absolute;
+    top: 35vh;
+    left: 560vw;
+    width: 92.3vw;
+    height: 26.6vh;
+  }
+
+  .thistestrun {
+    position: absolute;
+    width: 53.3vw;
+    height: 2vh;
+    left: 672vw;
+    top: 56vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .Zmith {
+    position: absolute;
+    width: 52.8vw;
+    height: 18.9vh;
+    left: 680vw;
+    top: 19.3vh;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .ZZTVROUND {
+    position: absolute;
+    width: 84.8vw;
+    height: 20.7vh;
+    left: 798.2vw;
+    top: 61.6vh;
+  }
+
+  .ZZTVEnd {
+    display: none;
+    visibility: hidden;
+  }
+
   .LZingBoi {
     width: 200vw;
+    overflow: hidden;
+  }
+
+  .LZCard {
+    width: 178.9vw;
+    height: 46.6vh;
+  }
+
+  .LZtext {
+    width: 154.6vw;
+    height: 46.6vh;
+  }
+
+  .LZspin {
+    width: 80vw;
+  }
+
+  .LZcontact {
+    width: 105vw;
+    height: 2vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
   }
 }

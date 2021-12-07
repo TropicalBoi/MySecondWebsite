@@ -94,14 +94,19 @@ const Zing = () => {
             className="FishTankFont"
             alt="Fish Tank"
           />
-          <p className="FishTankText1">
-            Our first project, “Fish tank” originates from our interest in a
-            contained ecosystem that serves as a decor like those in a
-            restaurant. A glass cage for entertainment which exists in various
-            public places, existing only to be observed. We have created an
-            ecosystem of a fish tank and installed a screen within it. Situated
-            on the second-floor dining area of a restaurant.
-          </p>
+          <div className="FishTankText1">
+            <p>
+              Our first project, “Fish tank” originates from our interest in a
+              contained ecosystem that serves as a decor like those in a
+              restaurant. A glass cage for entertainment which exists in various
+              public places, existing only to be observed.
+            </p>
+            <p>
+              We have created an ecosystem of a fish tank and installed a screen
+              within it. Situated on the second-floor dining area of a
+              restaurant.
+            </p>
+          </div>
           <img
             src={zingImages.FishTankPic1}
             className="FishTankPic1"
@@ -201,17 +206,29 @@ const Zing = () => {
             title="ZZTV Round 3(+1), 2020."
           ></iframe>
           <p className="thistestrun"> (this is a record of our test run.)</p>
-          <ReactPlayer
+          <div
             className={css`
               position: absolute;
+              width: 33.3vw;
+              height: 30vh;
               left: 234vw;
               top: 43vh;
+              @media screen and (max-width: 428px) {
+                width: 90vw;
+                height: 20vh;
+                left: 672vw;
+                top: 59.5vh;
+              }
             `}
-            url={zingImages.zingTestRun}
-            height="30vh"
-            width="33.3vw"
-            controls={true}
-          />
+          >
+            <ReactPlayer
+              url={zingImages.zingTestRun}
+              controls={true}
+              width="fit-content"
+              height="fit-content"
+            />
+          </div>
+
           <img src={zingImages.smith} className="Zmith" alt="ZZTV" />
           <img src={zingImages.ZZTVpic3} className="ZZTVpic3" alt="ZZTV" />
           <img src={zingImages.ZZTV31} className="ZZTVROUND" alt="ZZTV" />
