@@ -21,7 +21,7 @@
   scroll-snap-align: end;
 }
 
-.AhShitFont {
+.AhShitMainFont {
   position: absolute;
   width: 20.6vw;
   height: auto;
@@ -155,7 +155,7 @@
     text-transform: uppercase;
   }
 
-  .AhShitFont {
+  .AhShitMainFont {
     display: none;
     visibility: hidden;
   }

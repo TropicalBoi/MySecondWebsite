@@ -242,3 +242,127 @@ p {
   left: 269.2vw;
   top: 15.4vh;
 }
+
+@media screen and (max-width: 428px) {
+  .BackArrowFriendship {
+    right: 46.1vw;
+    top: 5vh;
+  }
+
+  .lineBFriendship {
+    width: 41.6vw;
+  }
+
+  .FriendshipContent1 {
+    width: 700vw;
+    background-position: 0 0, 200vw 0, 400vw 0;
+    background-size: 200vw 100vh, 200vw 100vh, 300vw 100vh;
+  }
+
+  .friendshipFont {
+    position: absolute;
+    width: 77.4vw;
+    height: auto;
+    left: 11.7vw;
+    top: 11.1vh;
+  }
+
+  .friendshipText1 {
+    position: absolute;
+    width: 73vw;
+    height: 43vh;
+    left: 54.3vw;
+    top: 48vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .friendshipText2 {
+    position: absolute;
+    width: 24vw;
+    height: 7.1vh;
+    left: 156.9vw;
+    top: 37.9vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .friendshipText3 {
+    position: absolute;
+    width: 58.9vw;
+    height: 12.2vh;
+    left: 423.8vw;
+    top: 22.6vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .friendshipText4 {
+    position: absolute;
+    width: 58.9vw;
+    height: 8.8vh;
+    left: 610.7vw;
+    top: 55.3vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .friendshipVid {
+    position: absolute;
+    width: 89.7vw;
+    height: 23.8vh;
+    left: 233.5vw;
+    top: 42.7vh;
+  }
+
+  .friendshipPic1 {
+    position: absolute;
+    width: 65.1vw;
+    height: auto;
+    left: 157.4vw;
+    top: 12.3vh;
+  }
+
+  .friendshipPic2 {
+    position: absolute;
+    width: 76.6vw;
+    height: auto;
+    left: 142vw;
+    top: 66.5vh;
+  }
+
+  .friendshipPic3 {
+    position: absolute;
+    width: 68.2vw;
+    height: auto;
+    left: 315.8vw;
+    top: 11.2vh;
+  }
+
+  .friendshipPic4 {
+    position: absolute;
+    width: 141.5vw;
+    height: auto;
+    left: 334.3vw;
+    top: 59.7vh;
+  }
+
+  .friendshipPic5 {
+    position: absolute;
+    width: 87.1vw;
+    height: auto;
+    left: 503vw;
+    top: 15.8vh;
+  }
+
+  .friendshipPic6 {
+    position: absolute;
+    width: 55.6vw;
+    height: auto;
+    left: 622.5vw;
+    top: 22.9vh;
+  }
+}

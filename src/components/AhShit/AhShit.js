@@ -10,7 +10,7 @@ const AhShit = () => {
     <div className="AhShit" id="AhShit">
       <img
         src={AhShitFont}
-        className="AhShitFont"
+        className="AhShitMainFont"
         alt="Ah shit, here we go again."
       />
       <img
