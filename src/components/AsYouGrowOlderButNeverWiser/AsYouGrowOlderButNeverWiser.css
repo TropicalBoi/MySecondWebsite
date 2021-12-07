@@ -128,6 +128,34 @@ p {
   top: 7.3vh;
 }
 
+.AsYouAbout {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 15.2vw;
+  height: 12.8vh;
+  left: 71vw;
+  top: 8.8vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.AsYouAboutBr {
+  font-size: 10vh;
+  font-weight: 100;
+}
+
+.AsYouAboutText {
+  width: 11.3vw;
+  height: 6.9vh;
+  font-size: 1.9vh;
+  line-height: 2.3vh;
+}
+
 .AsYouText1 {
   display: flex;
   flex-direction: column;
@@ -256,4 +284,180 @@ p {
   height: auto;
   left: 210.5vw;
   top: 7.8vh;
+}
+
+@media screen and (max-width: 428px) {
+
+  .BackArrowAsYou {
+    right: 46.1vw;
+    top: 5vh;
+  }
+
+  .lineBAsYou {
+    width: 41.6vw;
+  }
+
+  .AsYouContent1 {
+    width: 800vw;
+    height: 100vh;
+    background-position: 0 0, 300vw 0;
+    background-size: 200vw 100vh, 600vw 100vh;
+  }
+
+  .AsYouFont1 {
+    position: absolute;
+    width: 45.3vw;
+    height: auto;
+    left: 15.6vw;
+    top: 13.3vh;
+  }
+
+  .AsYouAbout {
+    width: 50.7vw;
+    height: 8.6vh;
+    left: 90.5vw;
+    top: 85.5vh;
+  }
+
+  .AsYouAboutBr {
+    font-size: 10vh;
+  }
+
+  .AsYouAboutText {
+    width: 38.4vw;
+    height: 5.5vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .AsYouText1 {
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-align: justify;
+    text-indent: 12.8vw;
+    color: #FFFFFF;
+  }
+
+  .AsYouTextBox1 {
+    position: absolute;
+    width: 82vw;
+    height: 22.6vh;
+    left: 83.8vw;
+    top: 16.7vh;
+  }
+
+  .AsYouTextBox2 {
+    position: absolute;
+    width: 51.4vw;
+    height: 22.9vh;
+    left: 125.8vw;
+    top: 48.5vh;
+  }
+
+  .AsYouText2 {
+    width: 82vw;
+    height: 21.3vh;
+    left: 249vw;
+    top: 62.4vh;
+    font-size: 1.56vh;
+    line-height: 2.2vh;
+    text-indent: 12.8vw;
+  }
+
+  .AsYouText3 {
+    width: 53vw;
+    height: 22.6vh;
+    left: 366.1vw;
+    top: 24.4vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .AsYouVid {
+    position: absolute;
+    width: 89.7vw;
+    height: 23.3vh;
+    left: 355.1vw;
+    top: 60.6vh;
+  }
+
+  .AsYouPic1 {
+    position: absolute;
+    width: 64.1vw;
+    height: auto;
+    left: 15.6vw;
+    top: 49.6vh;
+  }
+
+  .AsYouPic2 {
+    position: absolute;
+    width: 125.6vw;
+    height: auto;
+    left: 221.2vw;
+    top: 14.6vh;
+  }
+
+  .AsYouPic3 {
+    position: absolute;
+    width: 70.5vw;
+    height: auto;
+    left: 444.1vw;
+    top: 19.4vh;
+  }
+
+  .AsYouPic4 {
+    position: absolute;
+    width: 36.6vw;
+    height: auto;
+    left: 488.4vw;
+    top: 57.7vh;
+  }
+
+  .AsYouPic5 {
+    position: absolute;
+    width: 42.5vw;
+    height: auto;
+    left: 633.5vw;
+    top: 20.7vh;
+  }
+
+  .AsYouPic6 {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 564.6vw;
+    top: 53.3vh;
+  }
+
+  .AsYouPic7 {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 668.7vw;
+    top: 53.3vh;
+  }
+
+  .AsYouGif1 {
+    position: absolute;
+    width: 64.8vw;
+    height: auto;
+    left: 538.4vw;
+    top: 20.7vh;
+  }
+
+  .AsYouGif2 {
+    position: absolute;
+    width: 68.2vw;
+    height: auto;
+    left: 718.9vw;
+    top: 20.7vh;
+  }
 }

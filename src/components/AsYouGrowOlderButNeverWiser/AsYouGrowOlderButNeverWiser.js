@@ -40,8 +40,16 @@ const AsYouGrowOlderButNeverWiser = () => {
             className="AsYouFont1"
             alt="As you grow older but never wiser."
           />
+          <div className="AsYouAbout">
+            <p className="AsYouAboutBr">(</p>
+            <p className="AsYouAboutText">
+              Video single screen on a Gameboy Advance, 3.02 mins
+            </p>
+            <p className="AsYouAboutBr">)</p>
+          </div>
+
           <div className="AsYouText1">
-            <p className="AsYouTextBox">
+            <p className="AsYouTextBox1">
               Any excavation of history holds what which is unexpected. To come
               to the realization that what is labeled as history is not so far
               removed, not divorced from the present, and that it is within our
@@ -53,7 +61,7 @@ const AsYouGrowOlderButNeverWiser = () => {
               intricate networks that positions oneself in that history, to make
               sense of it.
             </p>
-            <p className="AsYouTextBox">
+            <p className="AsYouTextBox2">
               This work utilizes a device which was relevant during the early
               2000's. I used a GameBoy Advance as a media player to play a video
               that I modified its extension so it can be viewed through a
