@@ -129,14 +129,7 @@ const IWillAlwaysThinkOfYouFondly = () => {
             <GlassMagnifier
               imageSrc={IWillImages.PaperMock}
               imageAlt="I will always think of you fondly.,2019"
-              style={{
-                width: "92.5vw",
-                height: "67.5vh",
-                left: "210.6vw",
-                top: "19.2vh",
-                opacity: 100,
-                zIndex: 3,
-              }}
+              className="GlassMagnifierIMG"
               largeImageSrc={IWillImages.PaperMockL}
             />
           </div>
@@ -347,6 +340,11 @@ const IWillAlwaysThinkOfYouFondly = () => {
           <img
             src={IWillImages.IWillPic23}
             className="IWillPic23"
+            alt="Speedy Grandma Centennial"
+          />
+          <img
+            src={IWillImages.IWillPic24}
+            className="IWillPic24"
             alt="Speedy Grandma Centennial"
           />
         </div>

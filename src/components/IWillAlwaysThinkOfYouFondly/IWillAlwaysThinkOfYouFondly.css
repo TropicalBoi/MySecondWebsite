@@ -131,7 +131,7 @@ a:hover {
   flex-direction: row;
   position: relative;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #B9C0BE, #B9C0BE), linear-gradient(to right, #92B5A8, #92B5A8), linear-gradient(to right, #EDEDED, #EDEDED), linear-gradient(to right, #D2D8D6, #D2D8D6), linear-gradient(to right, #B9C0BE, #B9C0BE), linear-gradient(to right, #92B5A8, #92B5A8), linear-gradient(to right, #EDEDED, #EDEDED), linear-gradient(to right, #D2D8D6, #D2D8D6);
+  background-image: linear-gradient(to right, #B9C0BE, #B9C0BE), linear-gradient(to right, #92B5A8, #92B5A8), linear-gradient(to right, #EDEDED, #EDEDED), linear-gradient(to right, #DDDDDD, #DDDDDD), linear-gradient(to right, #B9C0BE, #B9C0BE), linear-gradient(to right, #92B5A8, #92B5A8), linear-gradient(to right, #EDEDED, #EDEDED), linear-gradient(to right, #D2D8D6, #D2D8D6);
   background-position: 0 0, 100vw 0, 200vw 0, 300vw 0, 400vw 0, 700vw 0, 800vw 0, 1000vw 0;
   background-size: 100vw 100vh, 100vw 100vh, 100vw 100vh, 100vw 100vh, 300vw 100vh, 100vw 100vh, 200vw 100vh, 330vw 100vh;
 }
@@ -327,6 +327,13 @@ a:hover {
   left: 1130vw;
   top: 0px;
   z-index: 1;
+  display: unset;
+  visibility: visible;
+}
+
+.IWillPic24 {
+  display: none;
+  visibility: hidden;
 }
 
 .IWillPaperMock img {
@@ -337,6 +344,15 @@ a:hover {
   -moz-animation: fadeIn 100s;
   -o-animation: fadeIn 100s;
   -ms-animation: fadeIn 100s;
+}
+
+.GlassMagnifierIMG {
+  width: 92.5vw;
+  height: 67.5vh;
+  left: 210.6vw;
+  top: 19.2vh;
+  opacity: 100;
+  z-index: 3;
 }
 
 @keyframes fadeIn {
@@ -741,6 +757,7 @@ a:hover {
   font-size: 1.9vh;
   line-height: 2.3vh;
   text-indent: 2.6vw;
+  text-align: justify;
   color: #000000;
 }
 
@@ -900,4 +917,568 @@ a:hover {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
+}
+
+@media screen and (max-width: 428px) {
+  .BackArrowIWill {
+    right: 46.1vw;
+    top: 5vh;
+  }
+
+  .lineBIWill {
+    width: 41.6vw;
+  }
+
+  .IWillContent1 {
+    width: 4240vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #B9C0BE, #B9C0BE),
+      linear-gradient(to right, #92B5A8, #92B5A8),
+      linear-gradient(to right, #EDEDED, #EDEDED),
+      linear-gradient(to right, #DDDDDD, #DDDDDD),
+      linear-gradient(to right, #B9C0BE, #B9C0BE),
+      linear-gradient(to right, #92B5A8, #92B5A8),
+      linear-gradient(to right, #EDEDED, #EDEDED),
+      linear-gradient(to right, #D2D8D6, #D2D8D6);
+    background-position: 0 0,
+      200vw 0,
+      500vw 0,
+      800vw 0,
+      1200vw 0,
+      2600vw 0,
+      2700vw 0,
+      3400vw 0;
+    background-size: 200vw 100vh,
+      300vw 100vh,
+      300vw 100vh,
+      400vw 100vh,
+      1400vw 100vh,
+      100vw 100vh,
+      700vw 100vh,
+      840vw 100vh;
+  }
+
+  .IWillFont {
+    position: absolute;
+    width: 37.1vw;
+    height: auto;
+    left: 22.5vw;
+    top: 16.5vh;
+  }
+
+  .IWillPic1 {
+    position: absolute;
+    width: 126.9vw;
+    height: auto;
+    left: 36.6vw;
+    top: 60.1vh;
+  }
+
+  .IWillPic2 {
+    position: absolute;
+    width: 102.8vw;
+    height: auto;
+    left: 257.1vw;
+    top: 27.1vh;
+  }
+
+  .IWillPic3 {
+    position: absolute;
+    width: 76.6vw;
+    height: auto;
+    left: 398.4vw;
+    top: 20.7vh;
+  }
+
+  .IWillPic4 {
+    position: absolute;
+    width: 125.6vw;
+    height: auto;
+    left: 437.1vw;
+    top: 59.4vh;
+  }
+
+  .IWillPic5 {
+    position: absolute;
+    width: 125.6vw;
+    height: auto;
+    left: 596.41vw;
+    top: 11.1vh;
+  }
+
+  .IWillPic6 {
+    position: absolute;
+    width: 97.1vw;
+    height: auto;
+    left: 1220.1vw;
+    top: 13.8vh;
+  }
+
+  .IWillPic7 {
+    position: absolute;
+    width: 88.9vw;
+    height: auto;
+    left: 1419.2vw;
+    top: 61.6vh;
+  }
+
+  .IWillPic8 {
+    position: absolute;
+    width: 108.2vw;
+    height: auto;
+    left: 1576.6vw;
+    top: 9.1vh;
+  }
+
+  .IWillPic9 {
+    position: absolute;
+    width: 125.1vw;
+    height: auto;
+    left: 1720vw;
+    top: 9.1vh;
+  }
+
+  .IWillPic10 {
+    position: absolute;
+    width: 97.9vw;
+    height: auto;
+    left: 1879.7vw;
+    top: 9.1vh;
+  }
+
+  .IWillPic11 {
+    position: absolute;
+    width: 125.2vw;
+    height: auto;
+    left: 2029.7vw;
+    top: 9.1vh;
+  }
+
+  .IWillPic12 {
+    position: absolute;
+    width: 136.1vw;
+    height: auto;
+    left: 1937.1vw;
+    top: 50.9vh;
+  }
+
+  .IWillPic13 {
+    position: absolute;
+    width: 71.2vw;
+    height: auto;
+    left: 2274.6vw;
+    top: 9.1vh;
+  }
+
+  .IWillPic14 {
+    position: absolute;
+    width: 207.9vw;
+    height: auto;
+    left: 2376.4vw;
+    top: 11.1vh;
+  }
+
+  .IWillPic15 {
+    position: absolute;
+    width: 82.0vw;
+    height: auto;
+    left: 2704.6vw;
+    top: 6.9vh;
+  }
+
+  .IWillPic16 {
+    position: absolute;
+    width: 99.7vw;
+    height: auto;
+    left: 2875.1vw;
+    top: 61.2vh;
+  }
+
+  .IWillPic17 {
+    position: absolute;
+    width: 78.4vw;
+    height: auto;
+    left: 2906.1vw;
+    top: 13vh;
+  }
+
+  .IWillPic18 {
+    position: absolute;
+    width: 127.6vw;
+    height: auto;
+    left: 3011.2vw;
+    top: 9.2vh;
+  }
+
+  .IWillPic19 {
+    position: absolute;
+    width: 84.3vw;
+    height: auto;
+    left: 3034.8vw;
+    top: 60.7vh;
+  }
+
+  .IWillPic20 {
+    position: absolute;
+    width: 117.1vw;
+    height: auto;
+    left: 3161.2vw;
+    top: 9.2vh;
+  }
+
+  .IWillPic21 {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+    left: 3317.9vw;
+    top: 0;
+  }
+
+  .IWillPic22 {
+    position: absolute;
+    width: 87.1vw;
+    height: auto;
+    left: 3666.4vw;
+    top: 22.2vh;
+  }
+
+  .IWillPic23 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .IWillPic24 {
+    position: absolute;
+    width: 440vw;
+    height: 100vh;
+    left: 3800vw;
+    top: 0px;
+    z-index: 1;
+    display: unset;
+    visibility: visible;
+  }
+
+  .GlassMagnifierIMG {
+    width: 377.1vw;
+    height: 66.5vh;
+    left: 434.5vw;
+    top: 18.4vh;
+    opacity: 100;
+    z-index: 3;
+  }
+
+  .IWillPaperMockBlank {
+    position: absolute;
+    width: 377.1vw;
+    height: 66.5vh;
+    left: 811.5vw;
+    top: 18.4vh;
+    z-index: 2;
+  }
+
+  .IWill132QRVid {
+    position: absolute;
+    width: 82vw;
+    height: 21.3vh;
+    left: 2609vw;
+    top: 28.6vh;
+  }
+
+  .IWillText1 {
+    position: absolute;
+    width: 66.6vw;
+    height: 24.1vh;
+    left: 114.8vw;
+    top: 20.3vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW1 {
+    width: fit-content;
+    height: fit-content;
+    left: 220.7vw;
+    top: 14.4vh;
+  }
+
+  .IWillAW11 {
+    height: fit-content;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW12 {
+    height: fit-content;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW1Text1 {
+    width: 70.2vw;
+    height: 16.1vh;
+    left: 227.4vw;
+    top: 66.1vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW1Text2 {
+    width: 76.6vw;
+    height: 14.2vh;
+    left: 339.4vw;
+    top: 64.6vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW1Text3 {
+    width: 36.1vw;
+    height: fit-content;
+    left: 398.4vw;
+    top: 51.5vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    padding-left: 5vw;
+  }
+
+  .IWillAW2 {
+    width: 40vw;
+    height: 17.6vh;
+    left: 522.5vw;
+    top: 30.5vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW2Text1 {
+    width: 56.9vw;
+    height: 14.6vh;
+    left: 596.4vw;
+    top: 59.4vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW2Text2 {
+    width: 86.9vw;
+    height: 16.3vh;
+    left: 687.1vw;
+    top: 58.7vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillMockupsText {
+    width: 90vw;
+    height: 7.3vh;
+    left: 813.3vw;
+    top: 9vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .IWillAW3 {
+    width: 80vw;
+    height: 10.3vh;
+    left: 1338vw;
+    top: 18.4vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW3Text1 {
+    width: 98.9vw;
+    height: 14.3vh;
+    left: 1338.7vw;
+    top: 37.5vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW3Text2 {
+    width: 72.3vw;
+    height: 9vh;
+    left: 1463.5vw;
+    top: 42.8vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW3Text3 {
+    width: 39.4vw;
+    height: fit-content;
+    left: 1504.1vw;
+    top: 12.9vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    padding-left: 5vw;
+  }
+
+  .IWillAW4 {
+    width: 74vw;
+    height: 20.4vh;
+    left: 1720vw;
+    top: 55.4vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW4Text1 {
+    width: 58.9vw;
+    height: 10.7vh;
+    left: 1818.9vw;
+    top: 72.7vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW5 {
+    width: fit-content;
+    height: fit-content;
+    left: 2169.7vw;
+    top: 18.1vh;
+    font-size: 4.2vh;
+    line-height: unset;
+  }
+
+  .IWillAW5Text1 {
+    width: 76.9vw;
+    height: 16.4vh;
+    left: 2137.9vw;
+    top: 61.7vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW5Text2 {
+    position: absolute;
+    width: 17vw;
+    height: fit-content;
+    left: 2244.6vw;
+    top: 42.2vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    padding-left: 5vw;
+  }
+
+  .IWillAW6 {
+    width: 55.8vw;
+    height: 17vh;
+    left: 2715vw;
+    top: 52.7vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW6Text1 {
+    width: 72vw;
+    height: 15.2vh;
+    left: 2782.5vw;
+    top: 61.4vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW6Text2 {
+    width: 37.6vw;
+    height: fit-content;
+    left: 2834.3vw;
+    top: 40.5vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    padding-left: 5vw;
+  }
+
+  .IWillInstallationView {
+    width: 30vw;
+    height: fit-content;
+    left: 3094.1vw;
+    top: 53.3vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .IWillAW7 {
+    width: 38.7vw;
+    height: 11.2vh;
+    left: 3513.5vw;
+    top: 26.77vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW71 {
+    width: 42vw;
+    height: 7.2vh;
+    left: 3577.4vw;
+    top: 30.8vh;
+    font-size: 3.5vh;
+    line-height: unset;
+  }
+
+  .IWillAW7Text1 {
+    width: 69.2vw;
+    height: 32.5vh;
+    left: 3513vw;
+    top: 48.8vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW7Text2 {
+    width: 86.6vw;
+    height: 12.4vh;
+    left: 3626.1vw;
+    top: 71.9vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
+  .IWillAW7Text3 {
+    position: absolute;
+    width: 56.1vw;
+    height: 4.9vh;
+    left: 3666.4vw;
+    top: 13.6vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .IWillAW7Text4 {
+    position: absolute;
+    width: 38.9vw;
+    height: 3.5vh;
+    left: 3844.8vw;
+    top: 21.6vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+  }
+
+  .IWillAW7Text5 {
+    position: absolute;
+    width: 76.9vw;
+    height: 10.7vh;
+    left: 4077.4vw;
+    top: 63.5vh;
+    font-size: 1.56vh;
+    line-height: 2vh;
+    text-indent: 12.8vw;
+  }
+
 }
