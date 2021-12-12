@@ -236,6 +236,11 @@ const IWillAlwaysThinkOfYouFondly = () => {
             allowfullscreen
             title="Untitled (132 QR codes), 2019. Turning QR codes back to the original video."
           ></iframe>
+          <p class="IWillRecordText">
+            {" "}
+            (A recorded video of me transforming 132 pieces of QR codes back to
+            the original video.)
+          </p>
           <p className="IWillAW6">I will always think of you fondly., 2019</p>
           <p className="IWillAW6Text1">
             This piece we attempt to make the physical form of the file last the
