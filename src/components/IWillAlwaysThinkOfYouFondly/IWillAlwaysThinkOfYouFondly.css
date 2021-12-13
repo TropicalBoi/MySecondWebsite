@@ -1102,7 +1102,7 @@ a:hover {
     width: 82.0vw;
     height: auto;
     left: 2704.6vw;
-    top: 6.9vh;
+    top: 15vh;
   }
 
   .IWillPic16 {
@@ -1157,7 +1157,7 @@ a:hover {
     position: absolute;
     width: 87.1vw;
     height: auto;
-    left: 3626.6vw;
+    left: 3595.3vw;
     top: 22.2vh;
     z-index: 2;
   }
@@ -1255,7 +1255,7 @@ a:hover {
   }
 
   .IWillAW1Text3 {
-    width: 36.1vw;
+    width: 34vw;
     height: fit-content;
     left: 398.4vw;
     top: 51.5vh;
@@ -1394,7 +1394,7 @@ a:hover {
     position: absolute;
     width: 74.1vw;
     height: fit-content;
-    left: 2602.3vw;
+    left: 2609vw;
     top: 56.7vh;
     font-size: 1.56vh;
     line-height: 2vh;
@@ -1402,9 +1402,9 @@ a:hover {
 
   .IWillAW6 {
     width: 55.8vw;
-    height: 17vh;
+    height: fit-content;
     left: 2715vw;
-    top: 52.7vh;
+    top: 60.7vh;
     font-size: 3.5vh;
     line-height: unset;
   }
@@ -1441,7 +1441,7 @@ a:hover {
   .IWillAW7 {
     width: 38.7vw;
     height: 11.2vh;
-    left: 3501.1vw;
+    left: 3493.3vw;
     top: 26.77vh;
     font-size: 3.5vh;
     line-height: unset;
@@ -1450,7 +1450,7 @@ a:hover {
   .IWillAW71 {
     width: 42vw;
     height: 7.2vh;
-    left: 3559.4vw;
+    left: 3539.2vw;
     top: 30.8vh;
     font-size: 3.5vh;
     line-height: unset;
@@ -1459,7 +1459,7 @@ a:hover {
   .IWillAW7Text1 {
     width: 69.2vw;
     height: 32.5vh;
-    left: 3501.1vw;
+    left: 3493.3vw;
     top: 48.8vh;
     font-size: 1.56vh;
     line-height: 2vh;
@@ -1480,7 +1480,7 @@ a:hover {
     position: absolute;
     width: 56.1vw;
     height: 4.9vh;
-    left: 3626.6vw;
+    left: 3625.1vw;
     top: 13.6vh;
     font-size: 1.56vh;
     line-height: 2vh;
