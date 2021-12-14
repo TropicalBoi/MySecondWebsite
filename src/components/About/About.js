@@ -832,6 +832,55 @@ const About = () => {
                     }
                   `}
                 >
+                  2021
+                </p>
+
+                <ul
+                  className={css`
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.5vh;
+                    line-height: 3vh;
+                    color: #ffffff;
+                    @media screen and (max-width: 428px) {
+                      width: 70vw;
+                      font-size: 4vw;
+                      line-height: 5vw;
+                      margin: 0 0 2vh 0;
+                    }
+                  `}
+                >
+                  <li>
+                    <em>The Place of Memories</em> group exhibition, SAC
+                    Gallery, Bangkok, Thailand
+                  </li>
+                </ul>
+              </div>
+              <div
+                className={css`
+                  display: flex;
+                  flex-direction: row;
+                  @media screen and (max-width: 428px) {
+                    flex-direction: column;
+                  }
+                `}
+              >
+                <p
+                  className={css`
+                    font-family: "terminal-grotesque-open";
+                    font-size: 7.3vh;
+                    line-height: 8.6vh;
+                    color: #ffffff;
+                    min-width: 8.3vw;
+                    margin-right: 1.5vw;
+                    @media screen and (max-width: 428px) {
+                      font-size: 10vw;
+                      line-height: inherit;
+                      margin: 0.5vh 0;
+                    }
+                  `}
+                >
                   2020
                 </p>
 
@@ -857,7 +906,7 @@ const About = () => {
                     quality, Tokyo Hot, Bangkok, Thailand
                   </li>
                   <li>
-                    <em>Speedy Grandma</em>. Centennial group exhibition, Speedy
+                    <em>Speedy Grandma Centennial</em> group exhibition, Speedy
                     Grandma, Bangkok, Thailand
                   </li>
                 </ul>

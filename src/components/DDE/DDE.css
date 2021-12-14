@@ -15,6 +15,7 @@
   position: relative;
   scroll-snap-align: end;
   z-index: 300;
+  cursor: url(./torch_dark.cur), auto;
 }
 
 .Typewriter {
