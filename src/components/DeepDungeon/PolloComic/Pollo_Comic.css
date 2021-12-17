@@ -1,0 +1,303 @@
+.comic img {
+  opacity: 0;
+}
+
+.comic {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: fit-content;
+  background-color: #FFFFFF;
+}
+
+.big {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1vmin;
+}
+
+.b1, .b2 {
+  width: 100vw;
+  height: 50vw;
+  flex-wrap: nowrap;
+}
+
+.b3 {
+  width: 50vw;
+  height: 50vw;
+}
+
+/* all panal divs */
+
+.panel1 {
+  width: 50%;
+  height: 100%;
+}
+
+.p1 {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+}
+
+.panel2 {
+  animation-delay: 20s;
+  width: 50%;
+  height: 100%;
+}
+
+.p2 {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+}
+
+.panel3 {
+  animation-delay: 40s;
+  width: 100vw;
+  height: 37.5vw;
+  margin-bottom: 1vmin;
+}
+
+.p3 {
+  position: absolute;
+  width: 100vw;
+  height: 37.5vw;
+}
+
+.panel4 {
+  animation-delay: 15s;
+  width: 50%;
+  height: 50%;
+}
+
+.p4 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+}
+
+.panel5 {
+  width: 50%;
+  height: 50%;
+}
+
+.p5 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  animation: fadeUp 0s ease-in 30500ms 1 normal forwards;
+}
+
+.panel6 {
+  animation-delay: 25s;
+  width: 50%;
+  height: 50%;
+}
+
+.p6 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+}
+
+.panel7 {
+  animation-delay: 30s;
+  width: 50%;
+  height: 50%;
+}
+
+.p7 {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  animation: fadeUp 0s ease-in 32s 1 normal forwards;
+}
+
+.panel8 {
+  animation-delay: 35s;
+  width: 50%;
+  height: 100%;
+}
+
+.p8 {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+}
+
+.panel9 {
+  animation-delay: 40s;
+  width: 100vw;
+  height: 50vw;
+  margin-bottom: 1vmin;
+}
+
+.p9 {
+  position: absolute;
+  width: 100vw;
+  height: 50vw;
+}
+
+.panel10 {
+  animation-delay: 45s;
+  width: 100vw;
+  height: 13.28vw;
+}
+
+.p10 {
+  position: absolute;
+  width: 100vw;
+  height: 13.28vw;
+}
+
+.onBG {
+  z-index: 2;
+}
+
+/*animation panal 1*/
+
+.Sun1 {
+  animation: fadeUp 2s ease-in 0s 1 normal forwards;
+}
+
+.Sunray1 {
+  animation: fadeUp 500ms ease-in 3s 5 alternate forwards;
+}
+
+.BG1 {
+  animation: fadeUp 1s ease-in 6s 1 normal forwards;
+  box-shadow: 0 6px 6px -6px #000;
+}
+
+.Roachy1 {
+  animation: fadeUp 1s ease-in 8s 1 normal forwards;
+}
+
+/* animation panal2 */
+
+.Sun2 {
+  animation: fadeUp 500ms ease-in 16s 1 normal forwards;
+}
+
+.Sunray2 {
+  animation: fadeUp 500ms ease-in 16s 1 alternate forwards;
+}
+
+.BG2 {
+  animation: fadeUp 1s ease-in 10s 1 normal forwards;
+  box-shadow: 0 6px 6px -6px #000;
+}
+
+.Roachy2 {
+  animation: fadeUp 1s ease-in 13s 1 normal forwards;
+}
+
+.Oh2 {
+  animation: fadeUp 0s ease-in 15s 1 normal forwards;
+}
+
+/* animation panal3 */
+
+.BG3 {
+  animation: fadeUp 1s ease-in 18s 1 normal forwards;
+  box-shadow: 0 6px 6px -6px #000;
+}
+
+.Sword {
+  animation: moveIn 2s ease-in 20s 1 normal forwards;
+  opacity: 1;
+  right: 200%;
+}
+
+.Wink3 {
+  animation: fadeUp 500ms ease-in 23s 9 alternate forwards;
+}
+
+/* animation panal4 */
+
+.Oh4 {
+  animation: fadeUp 0s ease-in 29500ms 1 normal forwards;
+}
+
+.BG4 {
+  animation: fadeUp 0s ease-in 30s 1 normal forwards;
+}
+
+/* animation panal6 */
+
+.Sparkle6 {
+  animation: fadeUp 0s ease-in 31s 1 normal forwards;
+}
+
+.Wink6 {
+  animation: fadeUp 0s ease-in 31500ms 1 normal forwards;
+}
+
+/* animation panal8 */
+
+.BG8 {
+  animation: fadeUp 500ms ease-in 33s 1 normal forwards;
+}
+
+.Roachy8 {
+  animation: fadeUp 500ms ease-in 34s 1 normal forwards;
+}
+
+.Wink8 {
+  animation: fadeUp 500ms ease-in 35s 3 normal forwards;
+}
+
+.Shwink8 {
+  animation: fadeUp 500ms ease-in 36s 1 normal forwards;
+}
+
+/* animation panal9 */
+
+.Bubble9 {
+  animation: fadeUp 2s ease-in-out 38s 19 alternate forwards;
+}
+
+.BG9 {
+  animation: fadeUp 2s ease-in 44s 1 normal forwards;
+}
+
+/* animation panal10 */
+
+.BG10 {
+  animation: fadeUp 2s ease-in 48s 1 normal forwards;
+}
+
+.Sunny10 {
+  animation: fadeUp 2s ease-in 52s 1 normal forwards;
+}
+
+.Day10 {
+  animation: fadeUp 2s ease-in 54s 1 normal forwards;
+}
+
+.Dream10 {
+  animation: fadeUp 2s ease-in 56s 1 normal forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    right: 200%;
+    opacity: 1;
+  }
+
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
