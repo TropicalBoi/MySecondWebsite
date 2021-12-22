@@ -133,12 +133,12 @@ const About = () => {
               width: 175px;
               height: fit-content;
               right: 1vw;
-              top: 92.2vh;
+              bottom: 1vh;
               font-family: Montserrat;
               font-style: normal;
               font-weight: normal;
               font-size: 2.6vh;
-              line-height: 3.5vw;
+              line-height: unset;
               text-align: right;
               color: #ffffff;
               @media screen and (max-width: 428px) {
