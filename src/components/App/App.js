@@ -29,7 +29,7 @@ const App = () => {
       setLoading(false);
     };
     loadFiveSeconds();
-  });
+  }, []);
 
   return (
     <Router>
