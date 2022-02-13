@@ -60,7 +60,9 @@ const RPS = () => {
     }
   };
 
+
   const determineWinner = (userChoice, computerChoice) => {
+
     if (computerChoice !== "up for a loser.") {
       if (userChoice === "a bomb") {
         return "Calm down buddy";
