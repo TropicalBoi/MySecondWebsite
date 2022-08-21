@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import "./DDE.css";
 import DDEtorch from "./torch.gif";
+import { css } from "@emotion/css";
 // import { Link } from "react-router-dom";
 
 const DDE = () => {

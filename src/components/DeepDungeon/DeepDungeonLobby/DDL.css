@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
+  25% {
+    box-shadow: #d4f9ff 1px 0 10px;
+    color: #c4c4c4;
+  }
+  50% {
+    box-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
+  75% {
+    box-shadow: #d4f9ff 1px 0 10px;
+    color: #c4c4c4;
+  }
+  100% {
+    box-shadow: #000 1px 0 10px;
+    color: #fff;
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5vw;
+}
+
+.skill-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4vmin;
+  color: #efff31;
+  margin-bottom: 2vh;
+}
+
+.skill-img {
+  width: 6.25vw;
+  height: auto;
+}
+
+.skill-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4vmin;
+  text-align: center;
+  color: #ffffff;
+}
+
+.projects-container {
+  width: 65vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  margin-bottom: 10vh;
+}
+
+.project-img {
+  width: 19vw;
+  height: auto;
+  border-radius: 1vw;
+  margin-bottom: 2vh;
+  animation: boxShadow infinite 5s linear;
+}
+
+.edu-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 6vw;
+  margin-bottom: 10vh;
+}
+
+.edu-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vmin;
+  text-align: left;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 428px) {
+  .skill-type {
+    font-size: 3.5vmin;
+    margin-bottom: 1vh;
+  }
+
+  .skill-text {
+    font-size: 2.5vmin;
+  }
+
+  .skill-img {
+    width: 16.5vw;
+  }
+
+  .projects-container {
+    flex-flow: column nowrap;
+    margin-bottom: 4vh;
+  }
+
+  .project-container {
+    margin-bottom: 2.5vh;
+  }
+
+  .project-img {
+    width: 55vw;
+    margin-bottom: 1vh;
+  }
+
+  .edu-container{
+    margin-bottom: 7vh;
+  }
+
+  .edu-text {
+    font-size: 3vmin;
+  }
+}

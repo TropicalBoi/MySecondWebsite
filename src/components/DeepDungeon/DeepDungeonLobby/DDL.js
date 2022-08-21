@@ -1,29 +1,38 @@
 import React, { useState, useEffect, StrictMode } from "react";
 import { css, keyframes } from "@emotion/css";
-import { Link } from "react-router-dom";
 import DDLoading from "../../Loading/DDLoading";
-import Typewriter from "typewriter-effect";
+import DDLImages from "./DDLImages";
+import "./DDL.css";
 
-const boxShadow = keyframes`
+const textShadow = keyframes`
   0% {
-    box-shadow: #000 1px 0 10px;
+    text-shadow: #000 1px 0 10px;
     color: #fff;
   }
   25% {
-    box-shadow: #fc0 1px 0 10px;
+    text-shadow: #d4f9ff 1px 0 10px;
     color: #c4c4c4;
   }
   50% {
-    box-shadow: #000 1px 0 10px;
+    text-shadow: #000 1px 0 10px;
     color: #fff;
   }
   75% {
-    box-shadow: #fc0 1px 0 10px;
+    text-shadow: #d4f9ff 1px 0 10px;
     color: #c4c4c4;
   }
   100% {
-    box-shadow: #000 1px 0 10px;
+    text-shadow: #000 1px 0 10px;
     color: #fff;
+  }
+`;
+
+const BfaRotate = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 `;
 
@@ -32,7 +41,7 @@ const DDL = () => {
 
   useEffect(() => {
     const loadFiveSeconds = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5000));
+      await new Promise((resolve) => setTimeout(resolve, 1));
       setLoading(false);
     };
     loadFiveSeconds();
@@ -51,336 +60,488 @@ const DDL = () => {
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-evenly;
+            @media screen and (max-width: 428px) {
+              flex-direction: column;
+              align-items: center;
+            }
           `}
         >
-          <Link to="/">
-            <div
+          <div
+            className={css`
+              position: fixed;
+              top: 0;
+              right: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin: 2vw 2vw 0 0;
+            `}
+          >
+            <img
+              src={DDLImages.Printer}
               className={css`
-                width: auto;
+                width: 8vmin;
                 height: auto;
-                position: fixed;
-                right: 84.3vw;
-                top: 6.3vh;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                z-index: 10;
+                margin-bottom: 1vh;
+                @media screen and (max-width: 428px) {
+                  width: 9vmin;
+                  margin: 2vw 0 0.5vh 0;
+                }
+              `}
+              alt="CV"
+            />
+            <p
+              className={css`
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.4vmin;
+                text-align: center;
+                color: #ffffff;
+                @media screen and (max-width: 428px) {
+                  font-size: 2.5vmin;
+                }
               `}
             >
-              <div
+              CV
+            </p>
+          </div>
+          <div
+            className={css`
+              width: 70vw;
+              height: 100vh;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              background: #000;
+              @media screen and (max-width: 428px) {
+                flex-direction: column;
+                justify-content: center;
+              }
+            `}
+          >
+            <img
+              src={DDLImages.ProfilePic}
+              className={css`
+                width: 29.375vw;
+                height: auto;
+                margin-right: 5vw;
+                @media screen and (max-width: 428px) {
+                  width: 70vw;
+                  margin-right: 0;
+                }
+              `}
+              alt="Profile pic"
+            />
+            <div
+              className={css`
+                width: fit-content;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-right: 10vh;
+                margin-top: 10vh;
+                @media screen and (max-width: 428px) {
+                  margin-right: 0;
+                  margin-top: 2vh;
+                }
+              `}
+            >
+              <p
                 className={css`
-                  display: flex;
-                  flex-direction: column;
+                  font-family: terminal-grotesque-open;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 10vmin;
+                  color: #f3f3f3;
+                  margin-bottom: 2vh;
+                  animation: ${textShadow} infinite 10s linear;
+                  @media screen and (max-width: 428px) {
+                    font-size: 10.5vmin;
+                    margin-bottom: 1vh;
+                  }
                 `}
               >
-                <span
-                  className={css`
-                    transform: rotate(45deg);
-                    transform-origin: bottom left;
-                    border-right: 0.15rem solid #ffff00;
-                    height: 1rem;
-                    box-shadow: 0 0 10px 1px #ffffff;
-                  `}
-                ></span>
-                <span
-                  className={css`
-                    transform: rotate(-45deg);
-                    transform-origin: top left;
-                    border-left: 0.15rem solid #ffff00;
-                    height: 1rem;
-                    box-shadow: 0 0 10px 1px #ffffff;
-                  `}
-                ></span>
-              </div>
-              <span
-                class={css`
-                  display: inline-block;
-                  width: 13vw;
-                  height: 2px;
-                  background-color: #ffff00;
-                  margin: 10px 0;
-                  box-shadow: 0 0 10px 2px #ffffff;
-                  transition: width 1s ease-out;
-                  &::before {
-                    content: "";
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    top: 0;
-                  }
-                  &:hover {
-                    width: 15.6vw;
+                Tewprai Bualoi
+              </p>
+              <p
+                className={css`
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 3.1vmin;
+                  color: #d9d9d9;
+                  margin-bottom: 3vh;
+                  animation: ${textShadow} infinite 10s linear;
+                  @media screen and (max-width: 428px) {
+                    font-size: 4vmin;
                   }
                 `}
-              ></span>
+              >
+                Freelance Web Developer
+              </p>
+              <p
+                className={css`
+                  font-family: "terminal-grotesque";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 4.2vmin;
+                  color: #ffffff;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 6vmin;
+                    margin-bottom: 1vh;
+                  }
+                `}
+              >
+                Competencies
+              </p>
+              <p className="skill-type">Front-end:</p>
+              <div className="skills-container">
+                <div className="skill-container">
+                  <img
+                    className="skill-img"
+                    src={DDLImages.IconHTML}
+                    alt="HTML"
+                  />
+                  <p className="skill-text">HTML</p>
+                </div>
+                <div className="skill-container">
+                  <img
+                    className="skill-img"
+                    src={DDLImages.IconCSS}
+                    alt="CSS"
+                  />
+                  <p className="skill-text">CSS</p>
+                </div>
+                <div className="skill-container">
+                  <img
+                    className="skill-img"
+                    src={DDLImages.IconJS}
+                    alt="JavaScript"
+                  />
+                  <p className="skill-text">JavaScript</p>
+                </div>
+                <div className="skill-container">
+                  <img
+                    className="skill-img"
+                    src={DDLImages.IconReact}
+                    alt="React"
+                  />
+                  <p className="skill-text">React.JS</p>
+                </div>
+              </div>
+              <div className="skills-container">
+                <div
+                  className={css`
+                    margin-right: 2vw;
+                  `}
+                >
+                  <p className="skill-type">Back-end:</p>
+                  <div className="skills-container">
+                    <div className="skill-container">
+                      <img
+                        className="skill-img"
+                        src={DDLImages.IconNode}
+                        alt="Node.js"
+                      />
+                      <p className="skill-text">Node.JS</p>
+                    </div>
+                    <div className="skill-container">
+                      <img
+                        className="skill-img"
+                        src={DDLImages.IconExpress}
+                        alt="Express.JS"
+                      />
+                      <p className="skill-text">Express.JS</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="database">
+                  <p className="skill-type">Database:</p>
+                  <div className="skills-container">
+                    <div className="skill-container">
+                      <img
+                        className="skill-img"
+                        src={DDLImages.IconMongo}
+                        alt="MongoDB"
+                      />
+                      <p className="skill-text">MongoDB</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </Link>
+          </div>
           <div
             className={css`
               display: flex;
               flex-direction: column;
-              justify-content: center;
-              padding: 70px;
-              width: 100vw;
-              height: 10vh;
-              background: #000;
-              border-radius: 20px;
-              align-items: center;
-              padding-top: 5vw;
+              justify-content: flex-start;
+              align-items: flex-start;
+              width: 65vw;
+              height: auto;
             `}
           >
-            <p
+            <div
               className={css`
-                width: 580px;
-                height: 120px;
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5vh;
-                line-height: 4vh;
                 display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
               `}
             >
-              Starvation and homelessness are *NOT* incentives for a productive
-              society.
-            </p>
-
-            <p
+              <p
+                className={css`
+                  font-family: "terminal-grotesque";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 4.2vmin;
+                  color: #14ffff;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 6vmin;
+                  }
+                `}
+              >
+                /Projects
+              </p>
+              <div className="projects-container">
+                <div className="project-container">
+                  <img
+                    src={DDLImages.UTDungeon}
+                    className="project-img"
+                    alt="UncleThong's Dungeon"
+                  />
+                  <p className="skill-text">UncleThong's Dungeon</p>
+                </div>
+                <div className="project-container">
+                  <img
+                    src={DDLImages.UTComic}
+                    className="project-img"
+                    alt="UncleThong's Comic"
+                  />
+                  <p className="skill-text">UncleThong's Comic</p>
+                </div>
+                <div className="project-container">
+                  <img
+                    src={DDLImages.JMMNG}
+                    className="project-img"
+                    alt="Jammming"
+                  />
+                  <p className="skill-text">ม่วนหลาย AKA Jammming</p>
+                </div>
+              </div>
+            </div>
+            <div
               className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 8.4vh;
-                line-height: 9.5vh;
                 display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
               `}
             >
-              Welcome to the Deep Dungeon!
-            </p>
-          </div>
-          <Link
-            to="/RPS"
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <p
+              <p
+                className={css`
+                  font-family: "terminal-grotesque";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 4.2vmin;
+                  color: #14ffff;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 6vmin;
+                  }
+                `}
+              >
+                /Showcase
+              </p>
+              <div className="projects-container">
+                <div className="project-container">
+                  <img
+                    src={DDLImages.WebTew}
+                    className="project-img"
+                    alt="Tewprai's art projects archive"
+                  />
+                  <p className="skill-text">Tewprai's art projects archive</p>
+                </div>
+                <div className="project-container">
+                  <img
+                    src={DDLImages.WebNina}
+                    className="project-img"
+                    alt="Nina Sach's website"
+                  />
+                  <p className="skill-text">Nina Sach's website</p>
+                </div>
+              </div>
+            </div>
+            <div
               className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
                 display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
               `}
             >
-              ROCK PAPER SCISSORS
-            </p>
-          </Link>
-          <div
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <Typewriter
+              <p
+                className={css`
+                  font-family: "terminal-grotesque";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 4.2vmin;
+                  color: #14ffff;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 6vmin;
+                  }
+                `}
+              >
+                /Education
+              </p>
+              <div className="projects-container">
+                <div className="edu-container">
+                  <img
+                    src={DDLImages.BFA}
+                    className={css`
+                      width: 3vw;
+                      height: auto;
+                      margin-right: 1vw;
+                      animation: ${BfaRotate} infinite 3s linear;
+                      @media screen and (max-width: 428px) {
+                        width: 9vw;
+                        margin-right: 3vw;
+                      }
+                    `}
+                    alt="Tewprai's art projects archive"
+                  />
+                  <p className="edu-text">
+                    BFA in Painting <br></br>
+                    King Mongkut's Institute <br></br>
+                    of Technology Ladkrabang
+                  </p>
+                </div>
+                <div className="edu-container">
+                  <img
+                    src={DDLImages.Computer}
+                    className={css`
+                      width: 3vw;
+                      height: auto;
+                      margin-right: 1vw;
+                      @media screen and (max-width: 428px) {
+                        width: 9vw;
+                        margin-right: 3vw;
+                      }
+                    `}
+                    alt="Nina Sach's website"
+                  />
+                  <p className="edu-text">
+                    Generation Thailand,<br></br>
+                    Junior Software Developer <br></br>
+                    (Fullstack),Bootcamp <br></br>
+                    (12 Weeks / Full time)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
               className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
                 display: flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
+                width: 65vw;
+                margin: 10vh 0;
+                @media screen and (max-width: 428px) {
+                  margin: 4vh 0 10vh 0;
+                }
               `}
-              options={{
-                strings: [
-                  "This dungeon is under construction.",
-                  "Coming soon!",
-                  "<3 <3 <3",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          <div
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <Typewriter
-              className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
-              `}
-              options={{
-                strings: [
-                  "This dungeon is under construction.",
-                  "Coming soon!",
-                  "<3 <3 <3",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          <div
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <Typewriter
-              className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
-              `}
-              options={{
-                strings: [
-                  "This dungeon is under construction.",
-                  "Coming soon!",
-                  "<3 <3 <3",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          <div
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <Typewriter
-              className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
-              `}
-              options={{
-                strings: [
-                  "This dungeon is under construction.",
-                  "Coming soon!",
-                  "<3 <3 <3",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          <div
-            className={css`
-              padding: 50px;
-              width: 500px;
-              height: 500px;
-              margin: 50px;
-              background: #000;
-              animation: ${boxShadow} infinite 5s linear;
-              border-radius: 20px;
-              display: flex;
-              justify-content: center;
-            `}
-          >
-            <Typewriter
-              className={css`
-                font-family: RuneScape Quill;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 5.4vh;
-                line-height: 5.5vh;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #ffff00;
-                text-shadow: #ffffff 1px 0 10px;
-              `}
-              options={{
-                strings: [
-                  "This dungeon is under construction.",
-                  "Coming soon!",
-                  "<3 <3 <3",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
+            >
+              <p
+                className={css`
+                  font-family: "terminal-grotesque";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 4.2vmin;
+                  color: #efff31;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 6vmin;
+                  }
+                `}
+              >
+                Contact
+              </p>
+              <p
+                className={css`
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 2.2vmin;
+                  text-align: center;
+                  color: #ffffff;
+                  margin-bottom: 3vh;
+                  @media screen and (max-width: 428px) {
+                    font-size: 4vmin;
+                    margin-bottom: 5vh;
+                  }
+                `}
+              >
+                (+66) 083 592 6693<br></br>
+                tewprai.b@gmail.com<br></br>
+                Based in Bangkok
+              </p>
+              <div
+                className={css`
+                  width: 8vw;
+                  height: auto;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  @media screen and (max-width: 428px) {
+                    width: 45vw;
+                  }
+                `}
+              >
+                <img
+                  src={DDLImages.IconGit}
+                  className={css`
+                    width: 1.8vw;
+                    height: auto;
+                    @media screen and (max-width: 428px) {
+                      width: 10vw;
+                    }
+                  `}
+                  alt="GitHub"
+                />
+                <img
+                  src={DDLImages.IconIn}
+                  className={css`
+                    width: 1.8vw;
+                    height: auto;
+                    @media screen and (max-width: 428px) {
+                      width: 10vw;
+                    }
+                  `}
+                  alt="LinkedIn"
+                />
+                <img
+                  src={DDLImages.IconIG}
+                  className={css`
+                    width: 1.8vw;
+                    height: auto;
+                    @media screen and (max-width: 428px) {
+                      width: 10vw;
+                    }
+                  `}
+                  alt="Instagram"
+                />
+              </div>
+            </div>
           </div>
         </div>
       )}

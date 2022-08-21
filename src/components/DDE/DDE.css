@@ -1,9 +1,10 @@
 @font-face {
-  font-family: 'RuneScape Quill';
+  font-family: "RuneScape Quill";
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  src: url('../font/runescapes/runescape/otf/RuneScape-Quill.otf') format('opentype');
+  src: url("../font/runescapes/runescape/otf/RuneScape-Quill.otf")
+    format("opentype");
 }
 
 .DDE {
@@ -16,6 +17,7 @@
   scroll-snap-align: end;
   z-index: 300;
   cursor: url(./torch_dark.cur), auto;
+  text-align: center;
 }
 
 .Typewriter {
@@ -27,9 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #FFFF00;
-  text-shadow: #FFFFFF 1px 0 10px;
+  color: #ffff00;
+  text-shadow: #ffffff 1px 0 10px;
 }
 
 .Typewriter a :hover {
@@ -50,22 +51,21 @@
 }
 
 @media screen and (max-width: 428px) {
-
   .DDE {
     justify-content: space-between;
+    text-align: center;
   }
 
   .Typewriter {
-    font-family: RuneScape Quill;
+    font-family: terminal-grotesque-open;
     font-style: normal;
     font-weight: normal;
     font-size: 4vh;
     line-height: 2.5vh;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: #FFFF00;
-    text-shadow: #FFFFFF 1px 0 10px;
+    color: #f3f3f3;
+    text-shadow: #ffffff 1px 0 10px;
     width: 30vw;
   }
 }
