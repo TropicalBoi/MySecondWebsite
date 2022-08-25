@@ -41,7 +41,7 @@ const DDL = () => {
 
   useEffect(() => {
     const loadFiveSeconds = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 1));
+      await new Promise((resolve) => setTimeout(resolve, 5000));
       setLoading(false);
     };
     loadFiveSeconds();
