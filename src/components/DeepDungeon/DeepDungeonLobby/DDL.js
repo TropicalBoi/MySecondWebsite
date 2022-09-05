@@ -3,6 +3,7 @@ import { css, keyframes } from "@emotion/css";
 import DDLoading from "../../Loading/DDLoading";
 import DDLImages from "./DDLImages";
 import "./DDL.css";
+import { Link } from "react-router-dom";
 
 const textShadow = keyframes`
   0% {
@@ -311,30 +312,36 @@ const DDL = () => {
                 /Projects
               </p>
               <div className="projects-container">
-                <div className="project-container">
-                  <img
-                    src={DDLImages.UTDungeon}
-                    className="project-img"
-                    alt="UncleThong's Dungeon"
-                  />
-                  <p className="skill-text">UncleThong's Dungeon</p>
-                </div>
-                <div className="project-container">
-                  <img
-                    src={DDLImages.UTComic}
-                    className="project-img"
-                    alt="UncleThong's Comic"
-                  />
-                  <p className="skill-text">UncleThong's Comic</p>
-                </div>
-                <div className="project-container">
-                  <img
-                    src={DDLImages.JMMNG}
-                    className="project-img"
-                    alt="Jammming"
-                  />
-                  <p className="skill-text">ม่วนหลาย AKA Jammming</p>
-                </div>
+                <Link to="/RPS">
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.UTDungeon}
+                      className="project-img"
+                      alt="UncleThong's Dungeon"
+                    />
+                    <p className="skill-text">UncleThong's Dungeon</p>
+                  </div>
+                </Link>
+                <Link to="/UncleThongComic">
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.UTComic}
+                      className="project-img"
+                      alt="UncleThong's Comic"
+                    />
+                    <p className="skill-text">UncleThong's Comic</p>
+                  </div>
+                </Link>
+                <a href="https://jammuan.netlify.app/">
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.JMMNG}
+                      className="project-img"
+                      alt="Jammming"
+                    />
+                    <p className="skill-text">ม่วนหลาย AKA Jammming</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div
@@ -361,22 +368,26 @@ const DDL = () => {
                 /Showcase
               </p>
               <div className="projects-container">
-                <div className="project-container">
-                  <img
-                    src={DDLImages.WebTew}
-                    className="project-img"
-                    alt="Tewprai's art projects archive"
-                  />
-                  <p className="skill-text">Tewprai's art projects archive</p>
-                </div>
-                <div className="project-container">
-                  <img
-                    src={DDLImages.WebNina}
-                    className="project-img"
-                    alt="Nina Sach's website"
-                  />
-                  <p className="skill-text">Nina Sach's website</p>
-                </div>
+                <Link to="/">
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.WebTew}
+                      className="project-img"
+                      alt="Tewprai's art projects archive"
+                    />
+                    <p className="skill-text">Tewprai's art projects archive</p>
+                  </div>
+                </Link>
+                <a href="https://www.ninasach.com/">
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.WebNina}
+                      className="project-img"
+                      alt="Nina Sach's website"
+                    />
+                    <p className="skill-text">Nina Sach's website</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div
@@ -507,39 +518,45 @@ const DDL = () => {
                   }
                 `}
               >
-                <img
-                  src={DDLImages.IconGit}
-                  className={css`
-                    width: 1.8vw;
-                    height: auto;
-                    @media screen and (max-width: 428px) {
-                      width: 10vw;
-                    }
-                  `}
-                  alt="GitHub"
-                />
-                <img
-                  src={DDLImages.IconIn}
-                  className={css`
-                    width: 1.8vw;
-                    height: auto;
-                    @media screen and (max-width: 428px) {
-                      width: 10vw;
-                    }
-                  `}
-                  alt="LinkedIn"
-                />
-                <img
-                  src={DDLImages.IconIG}
-                  className={css`
-                    width: 1.8vw;
-                    height: auto;
-                    @media screen and (max-width: 428px) {
-                      width: 10vw;
-                    }
-                  `}
-                  alt="Instagram"
-                />
+                <a href="https://github.com/TropicalBoi">
+                  <img
+                    src={DDLImages.IconGit}
+                    className={css`
+                      width: 1.8vw;
+                      height: auto;
+                      @media screen and (max-width: 428px) {
+                        width: 10vw;
+                      }
+                    `}
+                    alt="GitHub"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/tewprai/">
+                  <img
+                    src={DDLImages.IconIn}
+                    className={css`
+                      width: 1.8vw;
+                      height: auto;
+                      @media screen and (max-width: 428px) {
+                        width: 10vw;
+                      }
+                    `}
+                    alt="LinkedIn"
+                  />
+                </a>
+                <a href="https://www.instagram.com/t.ropicalboi/">
+                  <img
+                    src={DDLImages.IconIG}
+                    className={css`
+                      width: 1.8vw;
+                      height: auto;
+                      @media screen and (max-width: 428px) {
+                        width: 10vw;
+                      }
+                    `}
+                    alt="Instagram"
+                  />
+                </a>
               </div>
             </div>
           </div>
