@@ -322,7 +322,11 @@ const DDL = () => {
                     <p className="skill-text">UncleThong's Dungeon</p>
                   </div>
                 </Link>
-                <Link to="/UncleThongComic">
+                <Link
+                  to="/UncleThongComic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-container">
                     <img
                       src={DDLImages.UTComic}
@@ -332,7 +336,11 @@ const DDL = () => {
                     <p className="skill-text">UncleThong's Comic</p>
                   </div>
                 </Link>
-                <a href="https://jammuan.netlify.app/">
+                <a
+                  href="https://jammuan.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-container">
                     <img
                       src={DDLImages.JMMNG}
@@ -368,7 +376,7 @@ const DDL = () => {
                 /Showcase
               </p>
               <div className="projects-container">
-                <Link to="/">
+                <Link to="/" target="_blank" rel="noopener noreferrer">
                   <div className="project-container">
                     <img
                       src={DDLImages.WebTew}
@@ -378,7 +386,11 @@ const DDL = () => {
                     <p className="skill-text">Tewprai's art projects archive</p>
                   </div>
                 </Link>
-                <a href="https://www.ninasach.com/">
+                <a
+                  href="https://www.ninasach.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="project-container">
                     <img
                       src={DDLImages.WebNina}
@@ -518,7 +530,11 @@ const DDL = () => {
                   }
                 `}
               >
-                <a href="https://github.com/TropicalBoi">
+                <a
+                  href="https://github.com/TropicalBoi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={DDLImages.IconGit}
                     className={css`
@@ -531,7 +547,11 @@ const DDL = () => {
                     alt="GitHub"
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/tewprai/">
+                <a
+                  href="https://www.linkedin.com/in/tewprai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={DDLImages.IconIn}
                     className={css`
@@ -544,7 +564,11 @@ const DDL = () => {
                     alt="LinkedIn"
                   />
                 </a>
-                <a href="https://www.instagram.com/t.ropicalboi/">
+                <a
+                  href="https://www.instagram.com/t.ropicalboi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={DDLImages.IconIG}
                     className={css`
