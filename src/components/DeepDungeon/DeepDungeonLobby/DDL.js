@@ -79,34 +79,40 @@ const DDL = () => {
               margin: 2vw 2vw 0 0;
             `}
           >
-            <img
-              src={DDLImages.Printer}
-              className={css`
-                width: 8vmin;
-                height: auto;
-                margin-bottom: 1vh;
-                @media screen and (max-width: 428px) {
-                  width: 9vmin;
-                  margin: 2vw 0 0.5vh 0;
-                }
-              `}
-              alt="CV"
-            />
-            <p
-              className={css`
-                font-family: "Montserrat";
-                font-style: normal;
-                font-weight: 500;
-                font-size: 1.4vmin;
-                text-align: center;
-                color: #ffffff;
-                @media screen and (max-width: 428px) {
-                  font-size: 2.5vmin;
-                }
-              `}
+            <a
+              href="https://drive.google.com/file/d/1r8ks7FBe_fNmu2WanvT4smiSnW3YF7Td/view"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              CV
-            </p>
+              <img
+                src={DDLImages.Printer}
+                className={css`
+                  width: 8vmin;
+                  height: auto;
+                  margin-bottom: 1vh;
+                  @media screen and (max-width: 428px) {
+                    width: 9vmin;
+                    margin: 2vw 0 0.5vh 0;
+                  }
+                `}
+                alt="CV"
+              />
+              <p
+                className={css`
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 1.4vmin;
+                  text-align: center;
+                  color: #ffffff;
+                  @media screen and (max-width: 428px) {
+                    font-size: 2.5vmin;
+                  }
+                `}
+              >
+                CV
+              </p>
+            </a>
           </div>
           <div
             className={css`
