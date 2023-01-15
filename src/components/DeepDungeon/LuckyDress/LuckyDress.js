@@ -15,7 +15,7 @@ const LuckyDress = () => {
   };
 
   const determineLunarDate = () => {
-    const roundMoonDate = Math.floor(moonDate(moon.phase));
+    const roundMoonDate = Math.round(moonDate(moon.phase));
 
     if (roundMoonDate > 15) {
       setLunarDate(roundMoonDate - 15);
