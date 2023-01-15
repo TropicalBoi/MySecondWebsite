@@ -21,6 +21,7 @@
     "react-scroll-horizontal": "^1.6.6",
     "react-spring": "^9.5.2",
     "redux": "^4.2.0",
+    "suncalc": "^1.9.0",
     "typewriter-effect": "^2.19.0",
     "video-react": "^0.15.0"
   },
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "mockdate": "^3.0.5",
     "web-vitals": "^2.1.4"
   }
 }

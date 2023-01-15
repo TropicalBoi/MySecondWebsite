@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+.luckyDress {  
+  background: rgb(12, 53, 70);
+  background: radial-gradient(
+    circle,
+    rgba(12, 53, 70, 1) 0%,
+    rgb(1, 1, 16) 40%,
+    rgb(0, 0, 0) 100%
+  );
+  width: 100vw;
+  height: fit-content;
+}
+
+.luckyMainBody {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LuckyDressMainText {
+  width: fit-content;
+  height: fit-content;
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29.5vh;
+  color: #FFF7DC;
+  margin: 0;
+}
+
+@media screen and (max-width: 428px) {
+  .LuckyDressMainText {
+    width: 40vw;
+    font-size: 14.5vh;
+    text-align: center;
+  }
+
+}

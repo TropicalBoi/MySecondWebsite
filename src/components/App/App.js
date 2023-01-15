@@ -19,6 +19,7 @@ import IWill from "../IWill/IWill";
 import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
 import DDE from "../DDE/DDE";
+import LuckyDress from "../DeepDungeon/LuckyDress/LuckyDress";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ const App = () => {
         <Route path="/TropicalDeepDungeon" element={<DDL />} />
         <Route path="/RPS" element={<RPS />} />
         <Route path="/UncleThongComic" element={<PolloComic />} />
+        <Route path="/LuckyDress" element={<LuckyDress />} />
 
         <Route
           path="/"
