@@ -3,7 +3,6 @@ import "./LuckyDress.css";
 import SunCalc from "suncalc";
 import OrangeCat from "./OrangeCat";
 import Fortune from "./FortuneForetold";
-import Div100vh from "react-div-100vh";
 
 const LuckyDress = () => {
   const [ascending, setAscending] = useState(true);
@@ -38,27 +37,25 @@ const LuckyDress = () => {
   });
 
   return (
-    <Div100vh>
-      <div className="luckyDress">
-        <div className="luckyMainBody">
-          <div className="LunarDate">
-            <p className="ascending">{ascending ? "ขึ้น" : "แรม"}</p>
-            <div className="moonDate">
-              <p className="LunarDateCount">{lunarDate}</p>
-              <p className="night">ค่ำ</p>
-            </div>
-          </div>
-
-          <OrangeCat />
-          <div className="fortuneFortold">
-            <p>
-              {ascending ? "ขึ้น" : "แรม"} {lunarDate} ค่ำ
-            </p>
-            <p> {moonDate ? Fortune[moonDate] : ""} </p>
+    <div className="luckyDress">
+      <div className="luckyMainBody">
+        <div className="LunarDate">
+          <p className="ascending">{ascending ? "ขึ้น" : "แรม"}</p>
+          <div className="moonDate">
+            <p className="LunarDateCount">{lunarDate}</p>
+            <p className="night">ค่ำ</p>
           </div>
         </div>
+
+        <OrangeCat />
+        <div className="fortuneFortold">
+          <p>
+            {ascending ? "ขึ้น" : "แรม"} {lunarDate} ค่ำ
+          </p>
+          <p> {moonDate ? Fortune[moonDate] : ""} </p>
+        </div>
       </div>
-    </Div100vh>
+    </div>
   );
 };
 
