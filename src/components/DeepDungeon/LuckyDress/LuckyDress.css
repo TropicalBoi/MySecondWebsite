@@ -9,8 +9,7 @@
     rgb(0, 0, 0) 100%
   );
   width: 100vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: fit-content;
   overflow: hidden;
 }
 
@@ -20,7 +19,7 @@
 
 .luckyMainBody {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
