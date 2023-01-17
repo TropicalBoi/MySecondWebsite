@@ -13,6 +13,7 @@ const Zing = () => {
     overflowX: `scroll`,
     overflowY: `hidden`,
     width: `100vw`,
+    height: `100%`,
   };
 
   useEffect(() => {
