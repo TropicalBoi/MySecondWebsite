@@ -3,7 +3,7 @@ import React from "react";
 const OrangeCat = () => {
   return (
     <svg
-      width="700"
+      width="fitContent"
       height="700"
       viewBox="0 0 700 700"
       fill="none"
