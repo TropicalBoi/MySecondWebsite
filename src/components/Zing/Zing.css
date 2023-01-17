@@ -13,7 +13,7 @@
 
 .ZingContent {
   width: auto;
-  height: 100vh;
+  height: var(--doc-height);;
   overflow: unset;
   overflow-y: hidden;
   overflow-x: scroll;

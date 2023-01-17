@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Zing.css";
 import HorizontalScroll from "react-scroll-horizontal";
 
@@ -14,6 +14,15 @@ const Zing = () => {
     overflowY: `hidden`,
     width: `100vw`,
   };
+
+  useEffect(() => {
+    const documentHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+    };
+    window.addEventListener("resize", documentHeight);
+    documentHeight();
+  });
 
   return (
     <div className="ZingContent">
