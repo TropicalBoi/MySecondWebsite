@@ -20,6 +20,7 @@
 .luckyMainBody {
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: space-around;
   align-items: center;

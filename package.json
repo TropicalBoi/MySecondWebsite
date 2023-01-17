@@ -15,6 +15,7 @@
     "react-anime": "^4.1.1",
     "react-countdown": "^2.3.2",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-image-magnifiers": "^1.4.0",
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",

@@ -20,6 +20,7 @@ import AhShit from "../AhShit/AhShit";
 import FriendShip from "../FriendShip/FriendShip";
 import DDE from "../DDE/DDE";
 import LuckyDress from "../DeepDungeon/LuckyDress/LuckyDress";
+import { Helmet } from "react-helmet";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,12 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1"
+        />
+      </Helmet>
       <Routes>
         <Route path="/About" element={<About />} />
         <Route path="/Zing" element={<Zing />} />
