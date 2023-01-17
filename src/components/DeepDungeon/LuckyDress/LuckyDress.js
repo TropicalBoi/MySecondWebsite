@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./LuckyDress.css";
 import SunCalc from "suncalc";
+import OrangeCat from "./OrangeCat";
+import Fortune from "./FortuneForetold";
 
 const LuckyDress = () => {
   const [ascending, setAscending] = useState(true);
   const [lunarDate, setLunarDate] = useState();
+  const [moonDate, setMoonDate] = useState();
 
   const date = new Date();
 
   const moon = SunCalc.getMoonIllumination(date);
 
-  const moonDate = (number) => {
-    return number / 0.0333333333 + 1;
-  };
-
   const determineLunarDate = () => {
-    const roundMoonDate = Math.round(moonDate(moon.phase));
+    const roundMoonDate = Math.round(moon.phase / 0.0333333333 + 1);
+
+    setMoonDate(roundMoonDate);
 
     if (roundMoonDate > 15) {
       setLunarDate(roundMoonDate - 15);
@@ -23,6 +24,8 @@ const LuckyDress = () => {
       return;
     }
     setLunarDate(roundMoonDate);
+
+    return;
   };
 
   const fetch = () => {
@@ -36,10 +39,22 @@ const LuckyDress = () => {
   return (
     <div className="luckyDress">
       <div className="luckyMainBody">
-        <p className="LuckyDressMainText">
-          {" "}
-          {ascending ? "ขึ้น" : "แรม"} {lunarDate} ค่ำ{" "}
-        </p>
+        <div className="LunarDate">
+          <p className="ascending">{ascending ? "ขึ้น" : "แรม"}</p>
+          <div className="moonDate">
+            <p className="LunarDateCount">{lunarDate}</p>
+            <p className="night">ค่ำ</p>
+          </div>
+        </div>
+
+        <OrangeCat />
+        <div className="fortuneFortold">
+          <p>
+            {ascending ? "ขึ้น" : "แรม"} {lunarDate} ค่ำ
+          </p>
+          <br />
+          <p> {moonDate ? Fortune[moonDate] : ""} </p>
+        </div>
       </div>
     </div>
   );
