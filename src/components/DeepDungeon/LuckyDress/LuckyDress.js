@@ -52,7 +52,6 @@ const LuckyDress = () => {
           <p>
             {ascending ? "ขึ้น" : "แรม"} {lunarDate} ค่ำ
           </p>
-          <br />
           <p> {moonDate ? Fortune[moonDate] : ""} </p>
         </div>
       </div>
