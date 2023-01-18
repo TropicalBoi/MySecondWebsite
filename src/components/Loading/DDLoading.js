@@ -95,7 +95,7 @@ const DDLoading = () => {
             justify-content: center;
             width: 60ch;
             height: 60ch;
-            border-radius: 10%;
+            border-radius: 100%;
             transition: box-shadow 0.5s;
             will-change: transform;
             animation: ${visible} 8s linear;
@@ -113,8 +113,8 @@ const DDLoading = () => {
               font-family: RuneScape Quill;
               font-style: normal;
               font-weight: normal;
-              font-size: 10vh;
-              line-height: 10vh;
+              font-size: 20vh;
+              line-height: 20vh;
               display: flex;
               align-items: center;
               text-align: center;
@@ -122,7 +122,7 @@ const DDLoading = () => {
               text-shadow: #ffffff 1px 0 10px;
             `}
           >
-            ENTERING DEEP DUNGEON LOBBY
+            WELCOME!!
           </p>
         </animated.div>
       </div>
