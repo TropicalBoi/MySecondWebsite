@@ -10,6 +10,7 @@ import UTComic from "./Images/UncleThongComic.jpg";
 import JMMNG from "./Images/Jammming.jpg";
 import WebTew from "./Images/TewLanding.jpg";
 import WebNina from "./Images/NNALanding2.jpg";
+import WebNamkheun from "./Images/Namkheun.jpg";
 import BFA from "./Images/color_wheel.png";
 import Computer from "./Images/computer.gif";
 import IconGit from "./Images/git_logo.png";
@@ -31,6 +32,7 @@ const DDLImages = {
   JMMNG,
   WebTew,
   WebNina,
+  WebNamkheun,
   BFA,
   Computer,
   IconGit,

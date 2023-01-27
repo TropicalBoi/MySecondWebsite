@@ -80,7 +80,7 @@ const DDL = () => {
             `}
           >
             <a
-              href="https://drive.google.com/file/d/1r8ks7FBe_fNmu2WanvT4smiSnW3YF7Td/view"
+              href="https://drive.google.com/file/d/1Te8uTK90AFv-m6VbPfKD3Ak-eVzOVdP2/view"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -404,6 +404,20 @@ const DDL = () => {
                       alt="Nina Sach's website"
                     />
                     <p className="skill-text">Nina Sach's website</p>
+                  </div>
+                </a>
+                <a
+                  href="https://namkheun.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-container">
+                    <img
+                      src={DDLImages.WebNamkheun}
+                      className="project-img"
+                      alt="Namkheun collective's website"
+                    />
+                    <p className="skill-text">Namkheun collective's website</p>
                   </div>
                 </a>
               </div>
